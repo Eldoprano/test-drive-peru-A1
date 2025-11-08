@@ -1,0 +1,7536 @@
+[
+  {
+    "id": 983,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Recoger o dejar pasajeros o carga en cualquier lugar",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dejar animales sueltos o situarlos de forma tal que obstaculicen solo un poco el tránsito",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Recoger o dejar pasajeros en lugares autorizados.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ejercer el comercio ambulatorio o estacionario",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 984,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Solo los peatones están obligados a su obediencia",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los conductores y los peatones están obligados a su obediencia, salvo instrucción de la Policía Nacional del Perú asignada al tránsito que indique lo contrario",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Solo los conductores están obligados a su obediencia.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Los conductores están obligados a su obediencia, aun cuando la Policía Nacional del Perú asignada al tránsito pueda indicar lo contrario.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 985,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está prohibido voltear a la izquierda y, por lo tanto también está prohibido el giro en U.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Está prohibido voltear a la izquierda, sin embargo, está permitido el giro en U.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El único sentido de desplazamiento es continuar de frente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 986,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Nos acercamos a una zona restringida al tránsito.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Está permitido adelantar vehículos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El único sentido de desplazamiento es continuar de frente.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_3-1.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 987,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está permitido cruzar al otro carril para el adelantamiento vehicular, si es que es seguro hacerlo.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No está permitido cruzar al otro carril para el adelantamiento vehicular.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se está reduciendo el ancho de la calzada de la vía por donde se circula.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Se está frente a un lugar de cruce peatonal.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 988,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Los vehículos deben avanzar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los vehículos deben detenerse.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Los vehículos deben acelerar la marcha.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Los vehículos deben detenerse antes de ingresar a la intersección si su velocidad y ubicación lo permiten; de lo contrario, deberán cruzar y despejar la intersección.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 989,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Detención - prevención - paso.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Detención - paso con prevención - circulación rápida.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Disminución de la velocidad - prevención - paso rápido.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 990,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Se puede continuar con precaución únicamente en la dirección de la flecha y desde el carril que esta flecha controla.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No está permitida la circulación en el sentido que indica la flecha.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se debe respetar únicamente la luz circular.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 991,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Prohíbe estacionar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Prohíbe al conductor detener el vehículo dentro del área de la intersección.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Prohíbe la carga y descarga.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Prohíbe la circulación de vehículos motorizados",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_53.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 992,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Avanzar en cualquier sentido, ya que la luz circular está en verde.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Avanzar, pero el giro a la izquierda está prohibido por la flecha roja.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Avanzar únicamente hacia la izquierda, pues continuar de frente está prohibido.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 993,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Si la luz intermitente es roja, ésta es equivalente a un ¿CEDA EL PASO?",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Si la luz intermitente es ámbar, tiene preferencia, debiendo reducir la velocidad y continuar con precaución.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Si la luz intermitente es verde, ésta es equivalente a un “PARE”.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 994,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Verdad.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Es verdad siempre y cuando también se encuentre un Policía de Tránsito indicando la señal de Pare.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Falso",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 995,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Girar desde cualquier carril.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Colocarse en el carril derecho, luego girar con precaución.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Colocarse en el carril más despejado de tráfico, luego girar con precaución.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Hacer la señal de volteo a la izquierda con las luces direccionales, ubicar con antelación el vehículo en el carril de circulación de la izquierda y girar con precaución.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 996,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Se deben encender las luces direccionales primero, buscar una brecha y realizar el cambio de carril con precaución.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se debe encontrar una brecha, luego cambiar de carril con precaución; no es necesario el uso de luces direccionales para cambios de carril.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se debe advertir utilizando el claxon, identificar una brecha y realizar el cambio de carril con precaución.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Está prohibido el cambio de carril en vías de un solo sentido.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 997,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Los vehículos que transitan por la vía férrea tienen preferencia de paso sobre los que transitan por la vía que la cruza.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los vehículos que transitan por la vía que cruza la línea férrea tienen preferencia de paso sobre los que transitan por la vía férrea.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El vehículo que llegue primero tiene preferencia.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Tiene preferencia el conductor que viene por la derecha del otro.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 998,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Detenerse hasta que cambie a luz verde.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Continuar la marcha.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Estar prevenido.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 999,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) En las curvas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dentro de una intersección.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Frente a la entrada de garajes y de recintos militares o policiales.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1000,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Prohíbe el uso de la bocina en vías urbanas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Prohíbe el uso de la bocina en carreteras.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Prohíbe el uso de la bocina.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Prohíbe hacer ruido.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_29.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1001,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Conduzca un vehículo automotor sin tener licencia de conducir.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Conduzca un vehículo que no cuente con el equipamiento para brindar una máxima comodidad a sus ocupantes.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Conduzca un vehículo sin contar con el SOAT.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) a y c son correctas",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1002,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Debe aumentar la velocidad para no dejar que el otro vehículo lo pase.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No debe aumentar la velocidad hasta que el vehículo lo sobrepase.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Debe disminuir drásticamente la velocidad de su vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Debe detener su vehículo.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1003,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El conductor debe respetar los límites máximos y mínimos de velocidad establecidos.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El conductor debe respetar únicamente los límites máximos de velocidad, pues no existen límites mínimos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El conductor puede conducir a la velocidad que desee, siempre que lo haga de manera prudente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1004,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Bajas.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Altas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Luces altas en las intersecciones y bajas en las avenidas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1005,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Solo los ocupantes del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los ocupantes y terceros no ocupantes del vehículo.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Solo terceros afectados.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Solo el conductor del vehículo.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1006,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cualquier tipo de seguro de accidentes personales que comercialicen las empresas de seguro.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cualquier tipo de seguro vehicular, siempre que cubra a los ocupantes del vehículo y terceros afectados por un accidente de tránsito.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El Seguro Obligatorio de Accidentes de Tránsito - SOAT.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No es obligatorio contar con un seguro.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1007,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cuando emita señales visibles.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cuando emita señales audibles.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cuando emita señales audibles y visibles.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1008,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Detener el vehículo y no continuar la marcha hasta que haya culminado el ascenso o descenso de los escolares.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Adelantar por el lado izquierdo, pero con precaución.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Tocar el claxon para alertar que está pasando.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Adelantar muy despacio.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1009,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La presencia de un vehículo inmovilizado en la vía pública por alguna circunstancia.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Zona de obras por reparación en la calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que el vehículo que lo enfrenta debe detenerse.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) a y c son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1010,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está permitido adelantar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se aproxima un carril adicional.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está permitido cambiar de carril.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_22c.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1011,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Para girar en las intersecciones y para advertir los cambios de carril.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Para indicar la detención, parada o estacionamiento en zona peligrosa o la ejecución de maniobras riesgosas.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Durante toda la circulación del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) En cada intersección.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1012,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Si.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Depende de la intersección.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No se encuentra regulado en el reglamento.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1013,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Disminuir su velocidad y cederle el paso a los vehículos que circulan por la transversal.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Disminuir su velocidad y pasar con cuidado.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Sobre parar y pasar rápidamente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Parar por completo, ceder el paso a los usuarios que tengan preferencia y luego continuar con precaución.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1014,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No hay diferencia, se usan indistintamente.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La señal P-2A se utiliza en situaciones de mayor riesgo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La señal P-1A advierte la presencia de curva pronunciada a la derecha mientras que la P-2A advierte la presencia de curva suave a la derecha.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La señal P-2A advierte la presencia de curva pronunciada a la derecha mientras que la P-1A advierte la presencia de curva suave a la derecha.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_2a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1015,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Tener precaución con vehículos lentos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Regula la velocidad máxima permitida en curvas.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Regula la velocidad máxima en zonas rurales.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No se encuentra regulada en el reglamento.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_30f.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1016,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Luces direccionales.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Solo el antebrazo izquierdo y mano extendidos hacia abajo fuera del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Luces intermitentes y, en caso de fuerza mayor, utilizar el antebrazo izquierdo y mano extendidos hacia abajo fuera del vehículo, haciendo ángulo recto con el brazo.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Luces bajas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1017,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cualquiera de los dos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El que se aproxime por la derecha del otro.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El que se aproxime por la izquierda del otro.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) El que haga sonar la bocina primero.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_36.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1018,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El vehículo que ingresó primero a la intersección.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El vehículo que haga sonar la bocina primero.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El vehículo que haga cambio de luces primero.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Cualquier vehículo",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1019,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Quiere ingresar a la rotonda.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Circula por ella.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Acelera primero.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Hace sonar la bocina.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1020,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Izquierda.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Berma",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Por la derecha o izquierda.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1021,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Manejar normalmente.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Manejar despacio.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Abstenerse de manejar.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Manejar con un copiloto.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1022,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Documento de identidad, SOAT vigente (puede ser virtual) y tarjeta de identificación vehicular.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Certificado de Inspección Técnica Vehicular y contrato de compraventa del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Contrato de compraventa del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1023,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No tiene preferencia de paso.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Tiene preferencia de paso.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Debe detenerse.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Debe retroceder.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1024,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señalizar toda la maniobra hasta su culminación.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cambiar de dirección y luego señalizar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No existe ninguna obligación.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1025,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Sí, pero solo si está bajando una pendiente.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No, está prohibido.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Sí, en caso de que el conductor no sea novato.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No se encuentra regulado en la norma.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1026,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Brazo, antebrazo izquierdo y mano extendidos hacia afuera del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Antebrazo izquierdo y mano extendidos hacia arriba fuera del vehículo, formando un ángulo recto con el brazo.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Brazo, antebrazo derecho y mano extendidos hacia afuera del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1027,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No podrán ser conducidos.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Podrán ser conducidos únicamente en zonas urbanas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Podrán ser conducidos hasta por 90 días posteriores a la pérdida de vigencia de la licencia.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Podrán ser conducidos con normalidad hasta que renueve su licencia.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1028,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Determinadas infracciones suman puntos.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Una infracción puede sumar o disminuir puntos, a elección del infractor.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Determinadas infracciones restan puntos.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1029,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Suspensión de licencia de conducir.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Anulación de la Placa Única Nacional de Rodaje.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Inhabilitación definitiva para obtener una licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Internamiento vehicular.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1030,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Parte de la vía destinada a la circulación de peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Parte de la calzada destinada al tránsito de una fila de vehículos.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Vía rural destinada a la circulación de peatones y animales.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1031,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La línea transversal marcada en la calzada antes de la intersección, que indica al conductor el límite para detener el vehículo.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Las líneas que se encuentran en los lugares del estacionamiento.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El lugar utilizado para embarcar y desembarcar pasajeros.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1032,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Reducción de la calzada al lado derecho.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Reducción de la calzada al lado izquierdo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Reducción de la calzada en ambos lados.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ensanchamiento de la calzada en ambos lados.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_17a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1033,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Se puede adelantar en ambos sentidos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No está permitido adelantar en ningún sentido.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Respetar la línea que está de su lado (si es continua, no adelantar; si es discontinua, está permitido adelantar).",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Respetar la línea que está de su lado (si es discontinua, no adelantar; si es continua, está permitido adelantar)",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1034,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Área donde se prohíbe la circulación de vehículos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Área donde se prohíbe la circulación de peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Área de la vía en la que se prohíbe el estacionamiento de vehículos.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1035,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Obligación de detenerse de quien así lo enfrente.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Continuar la marcha por el carril izquierdo de la calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Continuar la marcha.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1036,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 30km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 40km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 60km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 80km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1037,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 30km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 40km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 60km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 80km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1038,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 60km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 70km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 80km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 100km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1039,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 20km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 30km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 35km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 50km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1040,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 80km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 90km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 100km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 110km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1041,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 30km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La mitad de la velocidad máxima establecida para cada tipo de vía.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 20 km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 15 km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1042,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Multa.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cancelación de licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Suspensión de la licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Multa, cancelación de la licencia de conducir e inhabilitación definitiva para obtener una licencia de conducir.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1043,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Una multa",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La suspensión de la licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Multa y suspensión de la licencia de conducir por 3 años.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1044,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cada medio año.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cada año.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cada dos años.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Cada tres años.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1045,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) A partir del segundo año contado desde el año siguiente de su fabricación.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) A partir del cuarto año contado desde el año siguiente de su fabricación.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) A partir del quinto año contado desde el año siguiente de su fabricación.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No está sujeto a inspección técnica.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1046,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 1 año.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 6 meses.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 4 años.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 2 años.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1047,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Dar aviso a los bomberos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dar aviso solo a la compañía de seguros.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Dar aviso a la compañía de seguros y dejar constancia en la delegación de la Policía Nacional del Perú más cercana.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Dar aviso únicamente a la Policía Nacional del Perú.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1048,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Dicha restricción es meramente informativa.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Es una obligación cumplir con la restricción.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Incumplir la restricción no genera un riesgo para la seguridad vial.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1049,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señal de curva sinuosa.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Señal de proximidad a un badén.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señal de proximidad de un reductor de velocidad tipo resalto.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_33a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1050,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Activar las luces intermitentes de emergencia.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Parar en su posición actual.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Salir del vehículo rápidamente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1051,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Sí, siempre y cuando el sonido no sea estridente.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Si, salvo prohibición expresa mediante la correspondiente señal.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No, está prohibido.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1052,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No estamos obligados a darle preferencia de paso.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Estamos obligados a darle prioridad de paso por ser una ambulancia.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está informando que está en servicio de urgencia.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1053,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No iniciar la marcha hasta que el vehículo o las personas terminen de cruzar.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Tocar el claxon para que se apuren en pasar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Bajar del vehículo y reclamar la falta al infractor.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1054,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Amarillo - blanco.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Blanco - Amarillo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Azul - rojo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Rojo - Amarillo.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1055,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Advertir con el claxon.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Advertir a viva voz.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Parar y ceder el paso.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Continuar la marcha lentamente.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1056,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No tiene ninguna obligación si no hay señalización.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Disminuir la velocidad a 40 Km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Disminuir la velocidad a 30 Km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Disminuir la velocidad a 35 km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1057,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señales reguladoras o de reglamentación.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Señales preventivas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señales informativas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Señales horizontales.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1058,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señales reguladoras o de reglamentación.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Señales preventivas.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señales informativas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Señales horizontales.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1059,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No detenerse totalmente en una señal de PARE.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Arrojar, depositar o abandonar objetos o sustancias en la vía pública que dificulten la circulación.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Utilizar la bocina para llamar la atención en forma innecesaria.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1060,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Ceder el paso a los vehículos de emergencia.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Mantener la velocidad y avanzar con cuidado.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Disminuir la velocidad, parar si es necesario y ceder el paso a los peatones o vehículos que circulan por la vía transversal.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Parar totalmente y luego avanzar con cuidado.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1061,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Si no se cuenta con el SOAT.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) En retroceso, salvo las excepciones que establece la norma.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Si no se tiene la licencia para el tipo de vehículo que se quiere conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1062,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Disminuir la velocidad y pasar con cuidado.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Detener el vehículo y ceder el paso al peatón.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Continuar porque usted tiene la prioridad.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Incrementar la velocidad para adelantar el cruce el peatón.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1063,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El uso del cinturón de seguridad es obligatorio para las personas que ocupen los asientos delanteros.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) En los asientos posteriores el uso del cinturón de seguridad es obligatorio en todos los vehículos cuando los tengan incorporados de fábrica y en los casos en que, de acuerdo a las normas se encuentren obligados a tenerlos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El uso del cinturón de seguridad no solo es obligatorio para el conductor.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1064,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Izquierda / Derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Derecha / Derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Derecha / Izquierda.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1065,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El conductor debe tratar de no utilizar la bocina para llamar la atención en forma innecesaria.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El uso de la bocina para llamar la atención en forma innecesaria no es una infracción al tránsito.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El conductor únicamente debe utilizar la bocina para evitar situaciones peligrosas.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) a y b son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1066,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que se puede adelantar, debido a que la línea no es amarilla continua.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que está prohibido cruzar la línea y no hay excepciones.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que está prohibido pasar al otro lado de la línea con algunas excepciones.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que es zona de peatones.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1067,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Es igual al número de asientos señalados en la tarjeta de identificación vehicular, con la excepción de niños en brazos en los asientos posteriores.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No existe prohibición sobre un número máximo de personas que se puede transportar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La restricción sobre un número máximo de personas que se puede transportar se aplica para los asientos delanteros, para los asientos posteriores no hay restricción.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Se puede transportar a todas las personas que entren en el vehículo, sin restricción, siempre y cuando no obstaculicen la visibilidad del conductor y todos sean de la misma familia.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1068,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Asegurarse de que todos los pasajeros permanezcan a bordo del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Abstenerse de fumar tanto el conductor como sus acompañantes.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Mantener encendido el motor del vehículo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1069,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Sí, siempre y cuando el conductor de la bicicleta se sujete a la parte posterior del auto, pero nunca a la parte lateral de éste.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Sí, siempre y cuando se prevean todas las medidas de seguridad respectivas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Sí, siempre y cuando esta acción sea realizada a una velocidad no mayor a",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No, es una acción prohibida y quien la cometa puede ser sancionado con una multa.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1070,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Las vías aledañas del parque del distrito en el cual reside, en el horario de 11:00 pm. a 5:00 am.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Un circuito de carrera, autódromo o pista de aceleración autorizado por la autoridad competente.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Las vías aledañas del parque del distrito en el cual reside, siempre y cuando tenga el permiso municipal correspondiente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1071,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Tener la puerta, capot o maletera del vehículo abierta, cuando el vehículo está en marcha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Conducir un vehículo lentamente por el carril de la izquierda causando congestión.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Conducir un vehículo con el motor en punto neutro o apagado.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1072,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Reemplazar a la señalización vertical cuando ésta no se encuentra en la vía, por tal motivo son colocadas donde no existe señales verticales.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Guiar a los usuarios únicamente en las vías que presentan peligros.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Reglamentar la circulación, así como advertir y guiar a los usuarios de la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1073,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Blanco.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Azul.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Rojo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Gris.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1074,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No está permitido cruzar al otro carril.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Está permitido cruzar al otro carril para el adelantamiento.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se trata de una vía de doble sentido de circulación, que permite cruzar al otro carril.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Separa corrientes de tráfico en el mismo sentido.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1075,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Continuar la circulación por el carril en que se encuentra.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Adelantar al vehículo que se encuentra delante de él y que circula por el carril izquierdo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No adelantar al vehículo que tiene adelante y que circula por el carril izquierdo y continuar por su carril.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Cambiarse al carril izquierdo con precaución.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/question_94-235x300.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1076,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Someterse a la prueba de alcoholemia, ya que está obligado a ello ante la solicitud del efectivo de la Policía de Tránsito.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Someterse o negarse a la prueba de alcoholemia, ya que no constituye una obligación del conductor realizarse dicha prueba.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Negarse a la prueba de alcoholemia, ya que únicamente es exigible si ha participado en un accidente de tránsito.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1077,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Llevar las placas de rodaje en el lugar que no corresponde.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Seguir a los vehículos de emergencia y vehículos oficiales para avanzar más rápidamente.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Arrojar objetos en la vía pública que dificulten la circulación.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Detenerse totalmente en una señal de PARE cuando no hay peatones y/o vehículos circulando por la vía transversal.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1078,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Dar preferencia de paso solo a los vehículos que circulan por la vía, pero no a los peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dar preferencia de paso a los vehículos que circulan por la vía y a los peatones que circulan por la acera.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Tocar el claxon para advertir a los peatones que circulen por la acera, que se detengan.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Salir rápidamente, a fin de evitar accidentes.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1079,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Un carril para motocicletas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Una línea que divide el área peatonal y el área de vehículos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Una línea que puede cruzarse para rebasar en caso de congestión.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que no se debe conducir atravesándola, al menos que haya una situación de emergencia.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1080,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Las luces bajas junto con las rompenieblas.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Solo las luces altas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Solo las luces bajas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1081,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Puede hacerlo si no viene un vehículo en el sentido contrario.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Puede hacerlo solo si, el vehículo en sentido contrario está lejos y alcanza hacer la maniobra con seguridad.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No puede hacerlo.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Puede hacerlo por la izquierda.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_100.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1082,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Prohibido estacionar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Prohibida la circulación de vehículos automotores.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Prohibida la circulación de autos particulares.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_17.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1083,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que la calle está clausurada.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que está por ingresar a una vía de sentido contrario y no debe entrar.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que debe parar totalmente antes de poder ingresar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_4.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1084,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Proximidad de un túnel.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Superficie deslizante.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Prender las luces bajas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Mantener la distancia entre vehículos por seguridad.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_deslizante.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1085,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Circular por el carril de la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Circular por el carril central.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Circular solo en el sentido indicado por la flecha.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_14.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1086,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que es una vía de tres carriles de un solo sentido.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que es una vía de tres carriles y usted puede utilizar solo uno de ellos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que es una vía de tres carriles y usted puede utilizar los dos de la derecha.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_11a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1087,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que la velocidad máxima de la vía es de 50 km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que la velocidad mínima de la vía es de 50 km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que al salir de la vía por donde está circulando, la velocidad máxima es 50 km/h.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que al salir de la vía por donde está circulando, la velocidad mínima es 50 km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_30c.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1088,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que la vía no continúa y los conductores deben girar a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que la intersección contempla giros tangentes a la izquierda en ambos sentidos.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que la intersección está en mantenimiento y que por el momento solo se puede girar a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_5_4.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1089,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que no está permitido girar en U.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que está permitido el giro en U.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que si desea puede girar a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_9.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1090,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que la vía solo permite girar a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Prevención por bifurcación de la vía.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que el carril por donde circula permite girar a la izquierda o seguir de frente.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No es una señal válida en el Perú.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_5_2.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1091,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que el peatón antes de cruzar debe mirar si se acercan autos por la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que el conductor que viene por la derecha debe tener cuidado con los peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que los peatones deben circular por la izquierda.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que los peatones deben circular por la derecha.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_20.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1092,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Crucero tipo cebra.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Control policial.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Pavimento deslizante.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Circular con luces bajas.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_r_40.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1093,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Los peatones deben circular por la derecha y los camiones por la izquierda",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los peatones deben tener cuidado con los camiones.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Zona de carga y descarga.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_48.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1094,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está permitido cambiar de carril por la izquierda y por la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se debe mantener la distancia de seguridad entre vehículos.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está permitido cambiar de carril por la izquierda para adelantar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_49.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1095,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que si solo hay un carril tiene preferencia de paso el conductor que llegó primero.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que si solo hay un carril tiene preferencia el conductor que está mirando la señal.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que si solo hay un carril no tiene preferencia el que está mirando la señal y debe darle paso al del sentido contrario.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_50.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1096,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Una señal informativa.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Una señal preventiva.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Una señal de obligación.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No es una señal válida en el Perú.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_5_1.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1097,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Hay una curva y contra- curva a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Hay una curva y contra- curva a la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Hay una curva y contra- curva pronunciada a la derecha.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Hay una curva y contra- curva pronunciada a la izquierda.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_3a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1098,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Se aproxima a una curva y contra-curva a la izquierda.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se aproxima a una curva y contra-curva a la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se aproxima a un camino sinuoso a la derecha.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Se aproxima a un camino sinuoso a la izquierda.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_p_5_1a.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1099,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El sentido del tránsito es el que indica la flecha.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se aproxima a una reducción de la vía en ambos sentidos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está circulando por una curva horizontal.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_61.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1100,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La vía está en mal estado y tiene baches.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Se aproxima a un resalto.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Se aproxima a un rompe muelles.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Se aproxima a un badén.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_p_34.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1101,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Una señal turística.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Una señal informativa.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Una señal preventiva.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_60.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1102,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Existencia de una ciclovía.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Autorización para el cruce de ciclistas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ciclistas en la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Cercanía de una ciclovía.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_46.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1103,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que los ciclistas deben usar la ciclovía.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que nos aproximamos a un cruce de ciclovía.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que la ciclovía es solo para los ciclistas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_46_a.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1104,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que los ciclistas deben detenerse en ese punto.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que nos aproximamos a un cruce de ciclovía.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que la ciclovía es solo para los ciclistas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La ubicación de un cruce de ciclistas.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_p_46b.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1105,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Vía es de uso exclusivo de los peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Zona con presencia de peatones.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ubicación de un cruce escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_48.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1106,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Vía es de uso exclusivo de peatones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un cruce peatonal.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ubicación de un cruce escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_48a.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1107,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Ubicación de un cruce escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a una calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ubicación de un cruce peatonal.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_48b.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1108,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona escolar.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un cruce peatonal.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Zona transitada.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_49.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1109,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un cruce escolar.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ubicación de un cruce escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_49a.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1110,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona transitada.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un cruce peatonal.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Ubicación de un cruce escolar",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_49b.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1111,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona de deportes.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a campo deportivo.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Proximidad a zona urbana.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Niños jugando.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_p_50.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1112,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona de parqueo de vehículos pesados.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a zona rural.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Maquinaria agrícola en la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_51.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1113,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Proximidad a un establo.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a zona agrícola.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Animales en la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_53.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1114,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Semáforo malogrado.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un semáforo.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Semáforos en ola verde.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_55.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1115,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que usted se aproxima a una señal de PARE.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que usted debe parar donde está la señal P-58.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que se trata de un PARE, pero puede seguir adelante.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_58.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1116,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que usted se aproxima a una señal de CEDA EL PASO.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que usted debe ceder el paso donde está la señal P- 59.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que se trata de un PARE, pero puede seguir adelante.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_59.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1117,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que usted se aproxima a una zona de camiones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que usted debe encender sus luces pues se aproxima a una zona con poca visibilidad.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que usted se aproxima a un túnel.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_41.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1118,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Proximidad a un aeropuerto.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a una pista de aviones.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Vuelo de aviones a baja altura.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Aviones que generan ruido.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_45.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1119,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que usted debe dar prioridad de paso a las ambulancias.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que usted debe dar prioridad de paso a los bomberos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que se aproxima a una salida de vehículos de bomberos.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_52.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1120,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que se aproxima un desierto.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que se aproxima una zona donde hay ráfagas de viento lateral.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que se acerca a una zona de arenamiento en la vía.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_66.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1121,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que se aproxima una tormenta.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que está pasando por una zona donde hay ráfagas de viento lateral.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que se acerca a una zona de arenamiento en la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_66a.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1122,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La vía está interrumpida y debe tomar el camino alternativo que muestra la señal.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) En la siguiente intersección está prohibido girar a la izquierda y por lo tanto, si desea seguir esa ruta debe tomar el camino alternativo que muestra la señal.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) En la siguiente intersección está prohibido girar a la derecha y por lo tanto, si desea seguir esa ruta debe tomar el camino alternativo que muestra la señal.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_140.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1123,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Si quiere girar a la izquierda debe pasar la intersección y dar la vuelta a la manzana.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) En la siguiente intersección está prohibido girar a la izquierda y por lo tanto, si desea seguir esa ruta debe hacerlo una cuadra antes.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) En esa dirección hay una zona de parqueo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_141.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1124,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señal de hostal.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Señal de hospedaje.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señal de hospital.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_i_14.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1125,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Proximidad de una bahía de taxis.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Proximidad a un estacionamiento permitido.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Proximidad de una zona de parqueo para vecinos.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Proximidad de un estacionamiento para emergencias.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_i_31.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1126,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Zona de control policial.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Zona de control de aduanas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Zona militar.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_i_9.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1127,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cercanía a una ferretería.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cercanía a un servicio mecánico.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cercanía a un grifo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_i_18.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1128,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cercanía a un servicio mecánico.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cercanía a una tienda.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cercanía a un grifo.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_i_19.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1129,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cercanía a un servicio mecánico.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Cercanía a una zona donde debe circular con cadenas en las llantas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cercanía a un grifo.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Cercanía a una llantería.",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_i_20.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1130,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Fin de la restricción de circulación de automotores.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Fin de la restricción de prohibido adelantar.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Fin de la restricción de circulación en doble sentido.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_r_16a.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1131,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Valor por la vida.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Respeto por la integridad física del resto de los usuarios.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Respeto a la autoridad encargada de la vigilancia y disciplina de tráfico.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1132,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Peatones, niños, adultos mayores, personas con movilidad reducida, ciclistas.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Únicamente los peatones y ciclistas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Únicamente los peatones y niños.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas, con excepción de los ciclistas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1133,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Flechas retroreflectivas que indican peligro.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Delineadores de curva, que guían al conductor.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Advertencia al conductor sobre la proximidad de un puente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_61.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1134,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Camión, tipo volquete.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Ómnibus, tipo panorámico.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Mototaxi.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Automóvil, tipo sedan.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1135,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Compartir su asiento con un niño, siempre y cuando éste sea menor de un año de edad.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que otra persona tome el control de la dirección del vehículo, siempre y",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Conducir con una mano sobre el volante de dirección, cuando es necesario accionar algún comando del vehículo, como realizar los cambios de velocidad.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1136,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) En su derecho - negarse.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Facultado - Rechazar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Obligado - someterse.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1137,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que la Policía de Tránsito intervenga a dicho conductor y que la autoridad que expidió la licencia de conducir ordene su reexaminación.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que la autoridad competente expida un permiso excepcional para dicho conductor.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que la Policía de Tránsito expida un permiso excepcional para dicho conductor.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que la Policía de Tránsito otorgue a dicho conductor un plazo prudencial para que continúe conduciendo.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1138,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Sí, siempre y cuando dicha discapacidad pueda ser superada con algún corrector que establezca alguna de las restricciones que prevé la norma vigente.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No, está terminantemente prohibido.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Depende del criterio del centro de emisión de la licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1139,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Nunca.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Sí, siempre y cuando vaya acompañada de una personas mayor de edad y titular de una licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No, salvo que conduzca un vehículo de dimensión reducida.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Sí, siempre y cuando sea mayor de 16 años y cuente con licencia de conducir o permiso provisional, conforme a lo dispuesto en el Reglamento Nacional del Sistema de Emisión de Licencias de Conducir.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1140,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Peatones - los letreros instalados en las vías públicas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los usuarios de la vía pública - los dispositivos de control de tránsito.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Vehículos - los medios de comunicación.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Menores de edad - los adultos mayores.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1141,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está prohibido arrojar, depositar o abandonar objetos en la vía pública, o cualquier otro obstáculo que pueda dificultar la circulación.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El conductor debe mantener el vehículo que conduce con el combustible necesario para evitar detenciones en la vía.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Los vehículos deben circular en vías urbanas con las luces bajas las 24 horas del día.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) En caso de haber agua en la calzada, el conductor de un vehículo debe tomar las precauciones, para evitar que ésta pueda mojar la acera y los peatones.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1142,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Debe obedecer la señal de velocidad instalada en la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Puede ir a una velocidad máxima de 60 km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Debe ir a una velocidad máxima de 60 km/h.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Debe ir a una velocidad entre 50 y 60 km/h.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1143,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está prohibida, salvo en casos estrictamente justificados.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Nunca debe realizarse.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está permitida",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Está permitida, salvo en carreteras.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1144,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Baja - carreteras - alta.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Alta - vías urbanas – baja.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Rompenieblas - carreteras - baja.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Alta - carretereras - baja.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1145,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El estacionamiento de un vehículo a la salida de salas de espectáculos en funcionamiento.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El estacionamiento de un vehículo de emergencia en un lugar no permitido, si ello fuera imprescindible.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El estacionamiento de un vehículo después de 1 metro de un paso peatonal.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) El estacionamiento de un vehículo sobre las aceras.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1146,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) El vehículo está estacionado en un lugar permitido en la vía pública, pero sin conductor por un tiempo mayor de 72 horas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) El vehículo está estacionado en un lugar permitido en la vía pública, pero sin conductor por un tiempo mayor de 96 horas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) El vehículo está estacionado en un lugar permitido en la vía pública, pero sin conductor y por un tiempo mayor de 48 horas.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La norma de tránsito no establece nada sobre el abandono del vehículo.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1147,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Asegurarse, en caso la carga sobresalga lateralmente de la carrocería, esté bien sujeta.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Evitar todo riesgo de caída de la carga que sobresale lateralmente de la carrocería.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Tratar que la carga no sea arrastrada.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Asegurarse que la carga no sobrepase las dimensiones de la carrocería.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1148,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Está permitida.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Está prohibida, en un índice superior al límite máximo que permite la norma.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Está prohibida en el ámbito urbano.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La norma no regula sobre ello.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1149,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cuando la situación lo justifique - la circulación o estacionamiento de vehículos.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Aun cuando la situación lo justifique no - circulación o estacionamiento de vehículos.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No se encuentra facultada ni - circulación de vehículos",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Únicamente con el consentimiento del conductor - circulación de vehículos.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1150,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Cambiar de luces bajas a luces altas",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Encender las luces de emergencia.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Cambiar de luces altas a luces bajas.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1151,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) En el sentido contrario a la circulación y en el carril izquierdo de la vía.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) En el sentido de la circulación y en el carril derecho de la vía, utilizando las luces altas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) En el sentido de la circulación y en el carril izquierdo de la vía, utilizando las luces intermitentes.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) En el sentido de la circulación y en el carril derecho de la vía, utilizando las luces intermitentes.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1152,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Acudir a la estación de bomberos.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Llamar a un familiar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Solicitar la intervención de la autoridad policial.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Abandonar el lugar donde ocurrió el accidente.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1153,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Portar la tarjeta de identificación vehicular del vehículo que conduce.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Portar y exhibir la Placa Única de Rodaje.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Constatar que el vehículo tiene SOAT vigente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1154,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Tarjeta de identificación vehicular.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Municipalidad provincial.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La Superintendencia Nacional de Aduanas y de Administración Tributaria - SUNAT.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Placa Única Nacional de Rodaje.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1155,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que realice pruebas de coordinación y equilibrio.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Uso del alcoholímetro.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Prueba de alcoholemia.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1156,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No, el conductor puede cometer la misma infracción varias veces y la sanción será la misma.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Si, cuando el conductor comete la misma infracción dentro de los 12 meses será sancionado con el doble de la multa.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Solo en los casos en que se cometan infracciones gravísimas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1157,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 06 meses.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 12 meses.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 24 meses.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 35 meses.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1158,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Tramitar el duplicado de su licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Tramitar la revalidación de su licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Tramitar la recategorización de su licencia de conducir.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1159,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señales de localización.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Señales de salida inmediata.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señales de servicios generales.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Señales ordinarias",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1160,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) No constituye una infracción.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Solo cuando la licencia de conducir ha sido retenida por la comisión de una infracción muy grave.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Si, constituye una infracción.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1161,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Horizontal - reglamentar.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Vertical - reglamentar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Más importante - mejorar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Menos importante - adornar.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1162,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Conductor - acera.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Conductor - calzada.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Conductor - berma.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Peatón - autopista.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1163,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La proximidad a una vía de tres carriles.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La proximidad a un huracán.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La proximidad a un camino sinuoso.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La proximidad de una intersección rotatoria (óvalo o rotonda).",
+        "is_correct": true
+      }
+    ],
+    "images": [
+      "images/senal_p_15.jpg"
+    ],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1164,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La proximidad del final de la vía.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La proximidad de una vía asfaltada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La proximidad de una pendiente leve.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/senal_p_31a.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1165,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Línea de carril.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Línea de borde de calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Línea de pare.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1166,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Dispositivos de control del tránsito que tienen por finalidad regular y controlar el tránsito vehicular, motorizado y no motorizado, y el peatonal, a través de las indicaciones de las luces respectivas.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dispositivos de control del tránsito que tienen por finalidad regular y controlar únicamente el tránsito vehicular motorizado y peatonal, a través de las indicaciones de luces.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Señales de color rojo, verde y amarillo, que tienen como único fin regular la corriente vehicular.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Artefactos que emiten luces de colores y cuyo único fin es regular la corriente de vehículos motorizados y peatones.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1167,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Preocupaciones.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Uso del teléfono celular.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Manipulación de la radio mientras se conduce.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1168,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Si, pues el conductor tomará decisiones lentas que lo inducirán a cometer errores.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Si, ya que el conductor está de mal genio.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) No, siempre que la conducción sea realizada lentamente.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) No, siempre y cuando la conducción sea realizada con un acompañante.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1169,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Girar rápidamente a la derecha antes que el peatón cruce la calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Dar preferencia de paso al peatón para que cruce la calzada.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Girar lentamente a la derecha antes que el peatón cruce la calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Tocar el claxon para que el peatón no cruce la calzada",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_187.jpg"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1170,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Pavimento seco, somnolencia, frenos desgastados.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Pavimento húmedo, neumáticos desgastados, cansancio.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Reductores de velocidad, falta de atención, uso del teléfono celular.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1171,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Berma.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Autopista.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Acera.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Demarcación.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1172,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La calzada.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La acera.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La berma.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1173,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La acera.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) La calzada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La berma.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) La autopista.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1174,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Las bocinas y las marcas en la calzada o señales horizontales.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Las bocinas y las señales verticales.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Las señales verticales, las marcas en la calzada o señales horizontales y las bocinas.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Las señales verticales y las marcas en la calzada o señales horizontales.",
+        "is_correct": true
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      4
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1175,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Puertas y capot cerrados, permitiéndose la maletera entreabierta para casos especiales.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Puertas, capot y maletera cerrados.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Puertas, capot y maletera cerrados, salvo autorización especial.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Capot y maletera cerrados, permitiéndose dos puertas entreabiertas para casos especiales.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1176,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 2 segundos antes de realizar la maniobra.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 1 metro antes de realizar la maniobra.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 20 metros antes de realizar la maniobra.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 3 metros antes de realizar la maniobra.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1177,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) 2 segundos antes de realizar la maniobra.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) 2 metros antes de realizar la maniobra.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) 30 metros antes de realizar la maniobra.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) 1 metro antes de realizar la maniobra.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1178,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Si.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) No",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Únicamente en el ámbito urbano.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Únicamente en carreteras.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1179,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Señalización de tránsito vertical y horizontal en una zona escolar.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Únicamente señalización de tránsito vertical en una zona escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Únicamente señalización de tránsito horizontal en una zona escolar.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Ninguna de las alternativas es correcta.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_197-300x102.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1180,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Islas canalizadoras - vía.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Líneas - intersección.",
+        "is_correct": true
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Vías - intersección.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Todas las alternativas son correctas.",
+        "is_correct": false
+      }
+    ],
+    "images": [],
+    "correct_answers": [
+      2
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1181,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) Que no puede detener el vehículo dentro del área de intersección.",
+        "is_correct": true
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Que se están realizando trabajos de emergencia en el área demarcada.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) Que únicamente puede detener el vehículo dentro del área de intersección.",
+        "is_correct": false
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) Que es una isla de refugio peatonal.",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_199.jpg"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "points": 1,
+    "category_id": 0
+  },
+  {
+    "id": 1182,
+    "type": "single",
+    "question": "",
+    "choices": [
+      {
+        "position": 0,
+        "value": 1,
+        "text": "a) La zona que permite adelantar inicia con las líneas amarillas continuas.",
+        "is_correct": false
+      },
+      {
+        "position": 1,
+        "value": 2,
+        "text": "b) Los conductores pueden estacionarse al empezar las líneas continuas.",
+        "is_correct": false
+      },
+      {
+        "position": 2,
+        "value": 3,
+        "text": "c) La zona de no adelantar inicia con las líneas amarillas continuas.",
+        "is_correct": true
+      },
+      {
+        "position": 3,
+        "value": 4,
+        "text": "d) El conductor del camión puede estacionarse antes de empezar las líneas continuas",
+        "is_correct": false
+      }
+    ],
+    "images": [
+      "images/question_200.jpg"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "points": 1,
+    "category_id": 0
+  }
+]
