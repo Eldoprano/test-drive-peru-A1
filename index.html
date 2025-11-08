@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Peru Driving Test - Practice App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <h1 class="app-title">Peru Driving Test</h1>
+            <p class="app-subtitle">Practice for your driver's license</p>
+
+            <div class="menu-buttons">
+                <button class="menu-btn" data-mode="random">
+                    <span class="btn-icon">🎲</span>
+                    <span class="btn-text">Random Questions</span>
+                    <span class="btn-desc">Practice with smart selection</span>
+                </button>
+
+                <button class="menu-btn" data-mode="sequential">
+                    <span class="btn-icon">📚</span>
+                    <span class="btn-text">Sequential Learning</span>
+                    <span class="btn-desc">Study questions in order</span>
+                </button>
+
+                <button class="menu-btn" data-mode="test">
+                    <span class="btn-icon">⏱️</span>
+                    <span class="btn-text">Simulated Test</span>
+                    <span class="btn-desc">40 questions • 40 minutes</span>
+                </button>
+
+                <button class="menu-btn" id="stats-btn">
+                    <span class="btn-icon">📊</span>
+                    <span class="btn-text">Progress Stats</span>
+                    <span class="btn-desc">View your performance</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+            <button id="exit-quiz" class="icon-btn" aria-label="Exit quiz">
+                <span>←</span>
+            </button>
+            <div class="quiz-info">
+                <span id="question-counter">Question 1/40</span>
+                <span id="timer" class="timer"></span>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <div class="question-section">
+                <div id="question-image" class="question-image"></div>
+                <h2 id="question-text" class="question-text"></h2>
+            </div>
+
+            <div id="choices-container" class="choices-container"></div>
+
+            <div id="feedback" class="feedback hidden">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="next-btn hidden">
+                    <span>Next Question →</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Screen -->
+    <div id="stats-screen" class="screen">
+        <div class="stats-header">
+            <button id="exit-stats" class="icon-btn" aria-label="Exit stats">
+                <span>←</span>
+            </button>
+            <h2>Your Progress</h2>
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-summary">
+                <div class="stat-card">
+                    <span class="stat-value" id="total-seen">0</span>
+                    <span class="stat-label">Questions Seen</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="total-correct">0</span>
+                    <span class="stat-label">Correct</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="accuracy">0%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--gray-0)"></span>
+                    <span>Not seen</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--red)"></span>
+                    <span>Struggling</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--yellow)"></span>
+                    <span>Learning</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--green)"></span>
+                    <span>Mastered</span>
+                </div>
+            </div>
+
+            <div id="questions-grid" class="questions-grid"></div>
+        </div>
+
+        <!-- Tooltip for hovering over questions -->
+        <div id="question-tooltip" class="tooltip hidden">
+            <h3 id="tooltip-title"></h3>
+            <div id="tooltip-image"></div>
+            <div id="tooltip-choices"></div>
+            <div id="tooltip-answer"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
