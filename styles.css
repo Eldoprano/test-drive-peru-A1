@@ -70,6 +70,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Desktop Background Enhancement */
+@media (min-width: 769px) {
+    body {
+        background: linear-gradient(135deg, var(--bg-0) 0%, var(--bg-1) 100%);
+    }
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
     position: fixed;
@@ -142,25 +149,49 @@ body {
 .menu-btn {
     background: var(--bg-1);
     border: 2px solid var(--bg-3);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 1.5rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, var(--bg-2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .menu-btn:hover {
     background: var(--bg-2);
     border-color: var(--green);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn:hover::before {
+    opacity: 1;
 }
 
 .menu-btn:active {
-    transform: translateY(0);
+    transform: translateY(-2px);
+}
+
+.menu-btn > * {
+    position: relative;
+    z-index: 1;
 }
 
 .btn-icon {
@@ -221,9 +252,20 @@ body {
 }
 
 .quiz-container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+}
+
+@media (min-width: 769px) {
+    .quiz-container {
+        background: var(--bg-1);
+        border-radius: 16px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .question-section {
@@ -232,8 +274,9 @@ body {
 
 .question-image {
     margin-bottom: 1.5rem;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .question-image img {
@@ -242,11 +285,24 @@ body {
     display: block;
 }
 
+@media (min-width: 769px) {
+    .question-image {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .question-text {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     line-height: 1.5;
+}
+
+.question-text:empty {
+    display: none;
+    margin: 0;
 }
 
 .choices-container {
@@ -258,19 +314,22 @@ body {
 .choice-btn {
     background: var(--bg-1);
     border: 2px solid var(--bg-3);
-    border-radius: 8px;
-    padding: 1rem;
+    border-radius: 12px;
+    padding: 1.25rem;
     text-align: left;
     cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 1rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.05rem;
     color: var(--foreground);
-    line-height: 1.4;
+    line-height: 1.5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .choice-btn:hover:not(:disabled) {
     background: var(--bg-2);
     border-color: var(--blue);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .choice-btn:disabled {
@@ -465,55 +524,146 @@ body {
     color: var(--bg-0);
 }
 
-/* Tooltip */
-.tooltip {
+/* Question Detail Modal */
+.modal-overlay {
     position: fixed;
-    background: var(--bg-1);
-    border: 2px solid var(--bg-4);
-    border-radius: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    max-width: 400px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.tooltip.hidden {
+.modal-overlay.hidden {
     display: none;
 }
 
-.tooltip h3 {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
+.modal-overlay.visible {
+    opacity: 1;
+}
+
+.modal-content {
+    background: var(--bg-1);
+    border: 2px solid var(--bg-4);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.visible .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--bg-3);
+}
+
+.modal-header h3 {
+    font-size: 1.5rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
     color: var(--foreground);
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: all 0.2s ease;
+    border-radius: 8px;
 }
 
-#tooltip-image {
-    margin-bottom: 0.75rem;
-    border-radius: 4px;
+.modal-close:hover {
+    background: var(--bg-2);
+    color: var(--red);
+}
+
+.modal-image {
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#tooltip-image img {
+.modal-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-#tooltip-choices {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-}
-
-#tooltip-choices div {
-    padding: 0.25rem 0;
-}
-
-#tooltip-answer {
+.modal-question {
+    font-size: 1.1rem;
     font-weight: 600;
-    color: var(--green);
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+}
+
+.modal-choices {
+    margin-bottom: 1.5rem;
+}
+
+.modal-choice {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: var(--bg-2);
+    border: 2px solid transparent;
+    line-height: 1.5;
+}
+
+.modal-choice.correct {
+    background: var(--bg-green);
+    border-color: var(--green);
+    font-weight: 600;
+}
+
+.modal-stats {
+    padding: 1rem;
+    background: var(--bg-2);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.modal-stats-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--bg-3);
+}
+
+.modal-stats-row:last-child {
+    border-bottom: none;
+}
+
+.modal-stats-label {
+    color: var(--gray-1);
+}
+
+.modal-stats-value {
+    font-weight: 600;
+    color: var(--foreground);
 }
 
 /* Mobile Optimizations */
@@ -527,10 +677,13 @@ body {
         gap: 0.4rem;
     }
 
-    .tooltip {
-        max-width: 90vw;
-        left: 5vw !important;
-        right: 5vw !important;
+    .modal-content {
+        padding: 1.5rem;
+        max-height: 95vh;
+    }
+
+    .modal-header h3 {
+        font-size: 1.25rem;
     }
 }
 

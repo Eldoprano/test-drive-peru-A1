@@ -238,9 +238,15 @@ function loadNextQuestion() {
 }
 
 function displayQuestion(question) {
-    // Question text
+    // Question text - hide if empty
     const questionText = document.getElementById('question-text');
-    questionText.textContent = question.question || 'Select the correct answer:';
+    if (question.question && question.question.trim()) {
+        questionText.textContent = question.question;
+        questionText.style.display = 'block';
+    } else {
+        questionText.textContent = '';
+        questionText.style.display = 'none';
+    }
 
     // Question image
     const questionImage = document.getElementById('question-image');
@@ -403,80 +409,104 @@ function renderQuestionsGrid() {
         cell.textContent = question.questionNumber;
         cell.dataset.questionNumber = question.questionNumber;
 
-        // Hover events for tooltip
-        cell.addEventListener('mouseenter', (e) => showTooltip(e, question));
-        cell.addEventListener('mousemove', (e) => updateTooltipPosition(e));
-        cell.addEventListener('mouseleave', hideTooltip);
+        // Click event to show modal
+        cell.addEventListener('click', () => showQuestionModal(question));
 
         grid.appendChild(cell);
     });
 }
 
-function showTooltip(event, question) {
-    const tooltip = document.getElementById('question-tooltip');
+function showQuestionModal(question) {
+    const modal = document.getElementById('question-modal');
     const progress = userProgress[question.questionNumber];
 
     // Title
-    document.getElementById('tooltip-title').textContent =
-        `Question ${question.questionNumber}`;
+    document.getElementById('modal-title').textContent = `Question ${question.questionNumber}`;
 
     // Image
-    const tooltipImage = document.getElementById('tooltip-image');
+    const modalImage = document.getElementById('modal-image');
     if (question.images && question.images.length > 0) {
-        tooltipImage.innerHTML = `<img src="${question.images[0]}" alt="Question image" style="max-width: 200px;">`;
+        modalImage.innerHTML = `<img src="${question.images[0]}" alt="Question image">`;
+        modalImage.style.display = 'block';
     } else {
-        tooltipImage.innerHTML = '';
+        modalImage.innerHTML = '';
+        modalImage.style.display = 'none';
     }
 
     // Question text
-    const tooltipChoices = document.getElementById('tooltip-choices');
-    let choicesHtml = '';
-
-    if (question.question) {
-        choicesHtml += `<div style="margin-bottom: 0.5rem; font-weight: 600;">${question.question}</div>`;
+    const modalQuestion = document.getElementById('modal-question');
+    if (question.question && question.question.trim()) {
+        modalQuestion.textContent = question.question;
+        modalQuestion.style.display = 'block';
+    } else {
+        modalQuestion.textContent = '';
+        modalQuestion.style.display = 'none';
     }
 
+    // Choices
+    const modalChoices = document.getElementById('modal-choices');
+    let choicesHtml = '';
     question.choices.forEach(choice => {
-        choicesHtml += `<div>${choice.text}</div>`;
+        const className = choice.is_correct ? 'modal-choice correct' : 'modal-choice';
+        choicesHtml += `<div class="${className}">${choice.text}</div>`;
     });
-    tooltipChoices.innerHTML = choicesHtml;
-
-    // Answer
-    const correctChoice = question.choices.find(c => c.is_correct);
-    const tooltipAnswer = document.getElementById('tooltip-answer');
-    tooltipAnswer.textContent = `✓ ${correctChoice.text}`;
+    modalChoices.innerHTML = choicesHtml;
 
     // Stats
+    const modalStats = document.getElementById('modal-stats');
     if (progress.seen) {
-        tooltipAnswer.textContent += ` (${progress.correct}/${progress.attempts})`;
+        const total = progress.correct + progress.incorrect;
+        const accuracy = total > 0 ? Math.round((progress.correct / total) * 100) : 0;
+        const avgTime = progress.totalTime / progress.attempts / 1000;
+
+        modalStats.innerHTML = `
+            <div class="modal-stats-row">
+                <span class="modal-stats-label">Status:</span>
+                <span class="modal-stats-value">${getMasteryLabel(getQuestionMasteryLevel(question.questionNumber))}</span>
+            </div>
+            <div class="modal-stats-row">
+                <span class="modal-stats-label">Attempts:</span>
+                <span class="modal-stats-value">${progress.attempts}</span>
+            </div>
+            <div class="modal-stats-row">
+                <span class="modal-stats-label">Correct:</span>
+                <span class="modal-stats-value">${progress.correct} / ${total} (${accuracy}%)</span>
+            </div>
+            <div class="modal-stats-row">
+                <span class="modal-stats-label">Avg Time:</span>
+                <span class="modal-stats-value">${avgTime.toFixed(1)}s</span>
+            </div>
+        `;
+        modalStats.style.display = 'block';
+    } else {
+        modalStats.innerHTML = `
+            <div class="modal-stats-row">
+                <span class="modal-stats-label">Status:</span>
+                <span class="modal-stats-value">Not seen yet</span>
+            </div>
+        `;
+        modalStats.style.display = 'block';
     }
 
-    tooltip.classList.remove('hidden');
-    updateTooltipPosition(event);
+    // Show modal with animation
+    modal.classList.remove('hidden');
+    setTimeout(() => modal.classList.add('visible'), 10);
 }
 
-function updateTooltipPosition(event) {
-    const tooltip = document.getElementById('question-tooltip');
-    const x = event.clientX;
-    const y = event.clientY;
-
-    // Position tooltip near cursor
-    tooltip.style.left = `${x + 15}px`;
-    tooltip.style.top = `${y + 15}px`;
-
-    // Adjust if tooltip goes off screen
-    const rect = tooltip.getBoundingClientRect();
-    if (rect.right > window.innerWidth) {
-        tooltip.style.left = `${x - rect.width - 15}px`;
-    }
-    if (rect.bottom > window.innerHeight) {
-        tooltip.style.top = `${y - rect.height - 15}px`;
-    }
+function hideQuestionModal() {
+    const modal = document.getElementById('question-modal');
+    modal.classList.remove('visible');
+    setTimeout(() => modal.classList.add('hidden'), 300);
 }
 
-function hideTooltip() {
-    const tooltip = document.getElementById('question-tooltip');
-    tooltip.classList.add('hidden');
+function getMasteryLabel(level) {
+    const labels = {
+        'not-seen': 'Not Seen',
+        'struggling': 'Struggling',
+        'learning': 'Learning',
+        'mastered': 'Mastered'
+    };
+    return labels[level] || level;
 }
 
 // Event Listeners
@@ -506,6 +536,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Next button
     document.getElementById('next-btn').addEventListener('click', loadNextQuestion);
+
+    // Modal close handlers
+    document.getElementById('modal-close').addEventListener('click', hideQuestionModal);
+    document.getElementById('question-modal').addEventListener('click', (e) => {
+        if (e.target.id === 'question-modal') {
+            hideQuestionModal();
+        }
+    });
 
     // Hide timer by default
     document.getElementById('timer').style.display = 'none';

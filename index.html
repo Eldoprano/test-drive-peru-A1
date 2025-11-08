@@ -121,13 +121,19 @@
 
             <div id="questions-grid" class="questions-grid"></div>
         </div>
+    </div>
 
-        <!-- Tooltip for hovering over questions -->
-        <div id="question-tooltip" class="tooltip hidden">
-            <h3 id="tooltip-title"></h3>
-            <div id="tooltip-image"></div>
-            <div id="tooltip-choices"></div>
-            <div id="tooltip-answer"></div>
+    <!-- Question Detail Modal -->
+    <div id="question-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Question Details</h3>
+                <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+            </div>
+            <div id="modal-image" class="modal-image"></div>
+            <div id="modal-question" class="modal-question"></div>
+            <div id="modal-choices" class="modal-choices"></div>
+            <div id="modal-stats" class="modal-stats"></div>
         </div>
     </div>
 
