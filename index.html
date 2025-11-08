@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Peru Driving Test - Practice App</title>
+    <meta name="description" content="Practice for your Peru driver's license test with smart question selection">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8DA101">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Peru Test">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Install Button (PWA) -->
+    <button id="install-btn" class="install-btn hidden" aria-label="Install app">
+        <span>📲 Install App</span>
+    </button>
+
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <h1 class="app-title">Peru Driving Test</h1>
+            <p class="app-subtitle">Practice for your driver's license</p>
+
+            <div class="menu-buttons">
+                <button class="menu-btn" data-mode="random">
+                    <span class="btn-icon">🎲</span>
+                    <span class="btn-text">Random Questions</span>
+                    <span class="btn-desc">Practice with smart selection</span>
+                </button>
+
+                <button class="menu-btn" data-mode="sequential">
+                    <span class="btn-icon">📚</span>
+                    <span class="btn-text">Sequential Learning</span>
+                    <span class="btn-desc">Study questions in order</span>
+                </button>
+
+                <button class="menu-btn" data-mode="test">
+                    <span class="btn-icon">⏱️</span>
+                    <span class="btn-text">Simulated Test</span>
+                    <span class="btn-desc">40 questions • 40 minutes</span>
+                </button>
+
+                <button class="menu-btn" id="stats-btn">
+                    <span class="btn-icon">📊</span>
+                    <span class="btn-text">Progress Stats</span>
+                    <span class="btn-desc">View your performance</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+            <button id="exit-quiz" class="icon-btn" aria-label="Exit quiz">
+                <span>←</span>
+            </button>
+            <div class="quiz-info">
+                <span id="question-counter">Question 1/40</span>
+                <span id="timer" class="timer"></span>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <div class="question-section">
+                <div id="question-image" class="question-image"></div>
+                <h2 id="question-text" class="question-text"></h2>
+            </div>
+
+            <div id="choices-container" class="choices-container"></div>
+
+            <button id="skip-btn" class="skip-btn">
+                <span>⏭️ Skip Question</span>
+            </button>
+
+            <div id="feedback" class="feedback hidden">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="next-btn hidden">
+                    <span>Next Question →</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Screen -->
+    <div id="stats-screen" class="screen">
+        <div class="stats-header">
+            <button id="exit-stats" class="icon-btn" aria-label="Exit stats">
+                <span>←</span>
+            </button>
+            <h2>Your Progress</h2>
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-summary">
+                <div class="stat-card">
+                    <span class="stat-value" id="total-seen">0</span>
+                    <span class="stat-label">Questions Seen</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="total-correct">0</span>
+                    <span class="stat-label">Correct</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="accuracy">0%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--gray-0)"></span>
+                    <span>Not seen</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--red)"></span>
+                    <span>Struggling</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--yellow)"></span>
+                    <span>Learning</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--green)"></span>
+                    <span>Mastered</span>
+                </div>
+            </div>
+
+            <div id="questions-grid" class="questions-grid"></div>
+        </div>
+    </div>
+
+    <!-- Question Detail Modal -->
+    <div id="question-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Question Details</h3>
+                <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+            </div>
+            <div id="modal-image" class="modal-image"></div>
+            <div id="modal-question" class="modal-question"></div>
+            <div id="modal-choices" class="modal-choices"></div>
+            <div id="modal-stats" class="modal-stats"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
