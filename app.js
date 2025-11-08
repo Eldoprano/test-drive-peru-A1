@@ -182,7 +182,7 @@ function createTestSequence() {
 }
 
 // Screen Navigation
-function showScreen(screenId) {
+function showScreen(screenId, addToHistory = true) {
     document.querySelectorAll('.screen').forEach(screen => {
         screen.classList.remove('active');
     });
@@ -190,6 +190,25 @@ function showScreen(screenId) {
     const screen = document.getElementById(screenId);
     if (screen) {
         screen.classList.add('active');
+    }
+
+    // Show/hide install button based on current screen
+    const installBtn = document.getElementById('install-btn');
+    if (screenId === 'home-screen') {
+        // Only show if PWA is installable and button exists
+        if (installBtn && deferredPrompt) {
+            installBtn.classList.remove('hidden');
+        }
+    } else {
+        // Hide on quiz and stats screens
+        if (installBtn) {
+            installBtn.classList.add('hidden');
+        }
+    }
+
+    // Add to browser history
+    if (addToHistory) {
+        history.pushState({ screen: screenId }, '', `#${screenId}`);
     }
 }
 
@@ -570,6 +589,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTheme();
     await loadQuizData();
 
+    // Initialize history state
+    history.replaceState({ screen: 'home-screen' }, '', '#home-screen');
+
     // Register Service Worker for PWA
     if ('serviceWorker' in navigator) {
         try {
@@ -647,4 +669,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Hide timer by default
     document.getElementById('timer').style.display = 'none';
+});
+
+// Handle browser back/forward buttons
+window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.screen) {
+        // Navigate to the screen without adding to history again
+        showScreen(event.state.screen, false);
+        
+        // If going back from quiz, clean up timer
+        if (event.state.screen !== 'quiz-screen' && testTimerInterval) {
+            clearInterval(testTimerInterval);
+            testTimerInterval = null;
+        }
+    } else {
+        // Default to home screen if no state
+        showScreen('home-screen', false);
+    }
 });
