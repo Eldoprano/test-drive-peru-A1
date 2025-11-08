@@ -340,8 +340,18 @@ function skipQuestion() {
     const skipBtn = document.getElementById('skip-btn');
     skipBtn.classList.add('hidden');
 
-    // Just move to next question without updating progress
-    // This keeps the question's weight high for future random selection
+    // Calculate time taken
+    const timeTaken = Date.now() - questionStartTime;
+
+    // Increment answered count for random and sequential modes
+    if (currentMode === 'random' || currentMode === 'sequential') {
+        questionsAnsweredCount++;
+    }
+
+    // Mark question as incorrect/failed when skipped
+    updateQuestionProgress(currentQuestion.questionNumber, false, timeTaken);
+
+    // Move to next question
     loadNextQuestion();
 }
 
