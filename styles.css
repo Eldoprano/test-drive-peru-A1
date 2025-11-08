@@ -98,8 +98,38 @@ body {
 
 .theme-toggle:hover {
     background: var(--bg-3);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
+/* Install Button (PWA) */
+.install-btn {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background: var(--green);
+    color: var(--bg-0);
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.install-btn:hover {
+    background: var(--aqua);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.install-btn.hidden {
+    display: none;
+}
+
+/* Container */
 
 .theme-toggle:active {
     transform: scale(0.95);
@@ -124,6 +154,14 @@ body {
     padding: 2rem 1rem;
 }
 
+/* Desktop layout improvements */
+@media (min-width: 769px) {
+    .container {
+        max-width: 900px;
+        padding: 3rem 2rem;
+    }
+}
+
 /* Home Screen */
 .app-title {
     font-size: 2rem;
@@ -134,16 +172,40 @@ body {
     margin-bottom: 0.5rem;
 }
 
+@media (min-width: 769px) {
+    .app-title {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
+
 .app-subtitle {
     text-align: center;
     color: var(--gray-1);
     margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 769px) {
+    .app-subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .menu-buttons {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/* Desktop grid layout for menu buttons */
+@media (min-width: 769px) {
+    .menu-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 .menu-btn {
@@ -249,6 +311,28 @@ body {
 .timer {
     color: var(--blue);
     font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.timer-warning {
+    color: var(--red) !important;
+}
+
+.timer-critical {
+    color: var(--red) !important;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
 }
 
 .quiz-container {
@@ -401,6 +485,36 @@ body {
 }
 
 .next-btn.hidden {
+    display: none;
+}
+
+/* Skip Button */
+.skip-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 2px dashed var(--bg-3);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.skip-btn:hover {
+    background: var(--bg-1);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+.skip-btn:active {
+    transform: scale(0.98);
+}
+
+.skip-btn.hidden {
     display: none;
 }
 

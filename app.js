@@ -8,6 +8,8 @@ let questionStartTime = null;
 let testStartTime = null;
 let testTimerInterval = null;
 let questionSequence = [];
+let deferredPrompt = null; // For PWA install prompt
+let questionsAnsweredCount = 0; // Counter for random and sequential modes
 
 // Theme Management
 function initTheme() {
@@ -194,6 +196,7 @@ function showScreen(screenId) {
 function startQuiz(mode) {
     currentMode = mode;
     currentQuestionIndex = 0;
+    questionsAnsweredCount = 0; // Reset counter when starting quiz
 
     if (mode === 'test') {
         createTestSequence();
@@ -274,6 +277,10 @@ function displayQuestion(question) {
     const feedback = document.getElementById('feedback');
     feedback.classList.add('hidden');
     feedback.classList.remove('correct', 'incorrect');
+
+    // Show skip button
+    const skipBtn = document.getElementById('skip-btn');
+    skipBtn.classList.remove('hidden');
 }
 
 function selectAnswer(selectedChoice, selectedButton) {
@@ -286,6 +293,10 @@ function selectAnswer(selectedChoice, selectedButton) {
         btn.disabled = true;
     });
 
+    // Hide skip button once an answer is selected
+    const skipBtn = document.getElementById('skip-btn');
+    skipBtn.classList.add('hidden');
+
     // Highlight selected answer
     selectedButton.classList.add('selected');
 
@@ -293,6 +304,11 @@ function selectAnswer(selectedChoice, selectedButton) {
     if (isCorrect) {
         selectedButton.classList.add('correct');
         showFeedback(true);
+
+        // Increment answered count for random and sequential modes
+        if (currentMode === 'random' || currentMode === 'sequential') {
+            questionsAnsweredCount++;
+        }
 
         // Auto-advance after 1 second
         setTimeout(() => {
@@ -309,9 +325,24 @@ function selectAnswer(selectedChoice, selectedButton) {
             }
         });
 
+        // Increment answered count for random and sequential modes
+        if (currentMode === 'random' || currentMode === 'sequential') {
+            questionsAnsweredCount++;
+        }
+
         showFeedback(false);
         updateQuestionProgress(currentQuestion.questionNumber, false, timeTaken);
     }
+}
+
+function skipQuestion() {
+    // Hide skip button
+    const skipBtn = document.getElementById('skip-btn');
+    skipBtn.classList.add('hidden');
+
+    // Just move to next question without updating progress
+    // This keeps the question's weight high for future random selection
+    loadNextQuestion();
 }
 
 function showFeedback(isCorrect) {
@@ -338,7 +369,9 @@ function updateQuizHeader() {
     if (currentMode === 'test') {
         counter.textContent = `Question ${currentQuestionIndex}/${questionSequence.length}`;
     } else if (currentMode === 'sequential') {
-        counter.textContent = `Question ${currentQuestion.questionNumber}/${quizData.length}`;
+        counter.textContent = `Question ${currentQuestion.questionNumber}/${quizData.length} • Answered: ${questionsAnsweredCount}`;
+    } else if (currentMode === 'random') {
+        counter.textContent = `Question ${currentQuestion.questionNumber} • Answered: ${questionsAnsweredCount}`;
     } else {
         counter.textContent = `Question ${currentQuestion.questionNumber}`;
     }
@@ -358,6 +391,19 @@ function startTestTimer() {
         const seconds = Math.floor((remaining % 60000) / 1000);
 
         timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+        // Remove all timer classes
+        timerElement.classList.remove('timer-warning', 'timer-critical');
+
+        // Add warning class for last 3 minutes
+        if (remaining <= 3 * 60 * 1000 && remaining > 30 * 1000) {
+            timerElement.classList.add('timer-warning');
+        }
+
+        // Add critical class for last 30 seconds (includes pulse animation)
+        if (remaining <= 30 * 1000) {
+            timerElement.classList.add('timer-critical');
+        }
 
         if (remaining === 0) {
             finishTest();
@@ -514,6 +560,47 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTheme();
     await loadQuizData();
 
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+        try {
+            const registration = await navigator.serviceWorker.register('/service-worker.js');
+            console.log('Service Worker registered successfully:', registration.scope);
+        } catch (error) {
+            console.log('Service Worker registration failed:', error);
+        }
+    }
+
+    // PWA Install prompt
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        
+        // Show install button
+        const installBtn = document.getElementById('install-btn');
+        installBtn.classList.remove('hidden');
+    });
+
+    // Install button click handler
+    document.getElementById('install-btn').addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        
+        console.log(`User response to install prompt: ${outcome}`);
+        deferredPrompt = null;
+        
+        // Hide install button
+        document.getElementById('install-btn').classList.add('hidden');
+    });
+
+    // Hide install button when app is installed
+    window.addEventListener('appinstalled', () => {
+        console.log('PWA installed successfully');
+        document.getElementById('install-btn').classList.add('hidden');
+        deferredPrompt = null;
+    });
+
     // Theme toggle
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
@@ -536,6 +623,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Next button
     document.getElementById('next-btn').addEventListener('click', loadNextQuestion);
+
+    // Skip button
+    document.getElementById('skip-btn').addEventListener('click', skipQuestion);
 
     // Modal close handlers
     document.getElementById('modal-close').addEventListener('click', hideQuestionModal);
