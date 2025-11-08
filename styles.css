@@ -364,7 +364,7 @@ body {
 }
 
 .question-image img {
-    width: 100%;
+    margin: auto;
     height: auto;
     display: block;
 }
@@ -494,7 +494,7 @@ body {
     width: 100%;
     margin-top: 1.5rem;
     background: transparent;
-    color: var(--text-secondary);
+    color: var(--gray-1);
     border: 2px dashed var(--bg-3);
     border-radius: 8px;
     padding: 0.75rem 1.5rem;
@@ -506,8 +506,8 @@ body {
 
 .skip-btn:hover {
     background: var(--bg-1);
-    border-color: var(--text-secondary);
-    color: var(--text-primary);
+    border-color: var(--gray-1);
+    color: var(--foreground);
 }
 
 .skip-btn:active {

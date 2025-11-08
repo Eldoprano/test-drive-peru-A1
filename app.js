@@ -89,7 +89,7 @@ function updateQuestionProgress(questionNumber, isCorrect, timeTaken) {
     }
 
     progress.attempts++;
-    progress.totalTime += Math.min(timeTaken, 10000); // Cap at 10 seconds
+    progress.totalTime += Math.min(timeTaken, 20000); // Cap at 20 seconds
 
     saveUserProgress();
 }
@@ -103,13 +103,21 @@ function getQuestionMasteryLevel(questionNumber) {
     const accuracy = progress.correct / total;
     const avgTime = progress.totalTime / progress.attempts;
 
-    // Struggling: accuracy < 50% or avg time > 7s
-    if (accuracy < 0.5 || avgTime > 7000) return 'struggling';
+    // STRUGGLING: Getting it wrong more often than right
+    // Primary factor: accuracy < 50%
+    // Time is only considered if extremely slow (>15s suggests confusion)
+    if (accuracy < 0.5) return 'struggling';
+    if (avgTime > 15000 && accuracy < 0.7) return 'struggling';
 
-    // Mastered: accuracy >= 80% and avg time <= 5s and at least 3 attempts
-    if (accuracy >= 0.8 && avgTime <= 5000 && total >= 3) return 'mastered';
+    // MASTERED: Consistently getting it right
+    // Primary factor: accuracy >= 85% with at least 3 attempts
+    // Time is reasonable (< 12s) - user has time to read and think
+    if (accuracy >= 0.85 && total >= 3 && avgTime <= 12000) return 'mastered';
+    // Also mastered if perfect accuracy, regardless of time
+    if (accuracy === 1.0 && total >= 2) return 'mastered';
 
-    // Learning: everything else
+    // LEARNING: Everything in between
+    // User is improving but not consistently perfect yet
     return 'learning';
 }
 
@@ -123,18 +131,27 @@ function getQuestionWeight(questionNumber) {
     const accuracy = progress.correct / total;
     const avgTime = progress.totalTime / progress.attempts;
 
-    // Struggling: high priority (weight 50-80)
-    if (accuracy < 0.5 || avgTime > 7000) {
-        return 50 + (1 - accuracy) * 30;
+    // STRUGGLING: High priority - needs more practice
+    // Weight 60-90 based on how poorly they're doing
+    if (accuracy < 0.5) {
+        return 60 + (1 - accuracy) * 30;
+    }
+    if (avgTime > 15000 && accuracy < 0.7) {
+        return 55 + (1 - accuracy) * 20;
     }
 
-    // Mastered: low priority (weight 1-10)
-    if (accuracy >= 0.8 && avgTime <= 5000) {
-        return Math.max(1, 10 - total);
+    // MASTERED: Low priority - they know it well
+    // Weight 1-15, decreases with more successful attempts
+    if (accuracy >= 0.85 && total >= 3 && avgTime <= 12000) {
+        return Math.max(1, 15 - total);
+    }
+    if (accuracy === 1.0 && total >= 2) {
+        return Math.max(1, 12 - total);
     }
 
-    // Learning: medium priority (weight 20-40)
-    return 20 + (1 - accuracy) * 20;
+    // LEARNING: Medium priority - still improving
+    // Weight 20-50 based on accuracy (prioritizes lower accuracy)
+    return 20 + (1 - accuracy) * 30;
 }
 
 // Question Selection
