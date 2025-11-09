@@ -1,93 +1,96 @@
-const CACHE_NAME = 'peru-driving-test-v2';
+const CACHE_NAME = 'peru-driving-test-v3';
+const BASE_PATH = '/test-drive-peru-A1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/quiz_data.json',
-  '/icon-192.png',
-  '/icon-512.png',
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/styles.css`,
+  `${BASE_PATH}/app.js`,
+  `${BASE_PATH}/quiz_data.json`,
+  `${BASE_PATH}/icon-192.png`,
+  `${BASE_PATH}/icon-512.png`,
   // Question images
-  'images/question_100.jpg',
-  'images/question_140.jpg',
-  'images/question_141.jpg',
-  'images/question_187.png',
-  'images/question_197-300x102.jpg',
-  'images/question_199.jpg',
-  'images/question_200.jpg',
-  'images/question_36.png',
-  'images/question_94-235x300.png',
-  'images/senal_deslizante.jpg',
-  'images/senal_i_14.jpg',
-  'images/senal_i_18.jpg',
-  'images/senal_i_19.jpg',
-  'images/senal_i_20.jpg',
-  'images/senal_i_31.jpg',
-  'images/senal_i_9.jpg',
-  'images/senal_p_15.jpg',
-  'images/senal_p_17a.jpg',
-  'images/senal_p_22c.jpg',
-  'images/senal_p_2a.jpg',
-  'images/senal_p_31a.jpg',
-  'images/senal_p_33a.jpg',
-  'images/senal_p_34.jpg',
-  'images/senal_p_3a.jpg',
-  'images/senal_p_41.jpg',
-  'images/senal_p_45.jpg',
-  'images/senal_p_46.jpg',
-  'images/senal_p_46_a.jpg',
-  'images/senal_p_46b.jpg',
-  'images/senal_p_48.jpg',
-  'images/senal_p_48a.jpg',
-  'images/senal_p_48b.jpg',
-  'images/senal_p_49.jpg',
-  'images/senal_p_49a.jpg',
-  'images/senal_p_49b.jpg',
-  'images/senal_p_50.jpg',
-  'images/senal_p_51.jpg',
-  'images/senal_p_52.jpg',
-  'images/senal_p_53.jpg',
-  'images/senal_p_55.jpg',
-  'images/senal_p_58.jpg',
-  'images/senal_p_59.jpg',
-  'images/senal_p_5_1a.jpg',
-  'images/senal_p_60.jpg',
-  'images/senal_p_61.jpg',
-  'images/senal_p_66.jpg',
-  'images/senal_p_66a.jpg',
-  'images/senal_r_11a.jpg',
-  'images/senal_r_14.jpg',
-  'images/senal_r_16a.jpg',
-  'images/senal_r_17.jpg',
-  'images/senal_r_20.jpg',
-  'images/senal_r_29.jpg',
-  'images/senal_r_3-1.jpg',
-  'images/senal_r_30c.jpg',
-  'images/senal_r_30f.jpg',
-  'images/senal_r_4.jpg',
-  'images/senal_r_40.jpg',
-  'images/senal_r_48.jpg',
-  'images/senal_r_49.jpg',
-  'images/senal_r_50.jpg',
-  'images/senal_r_53.jpg',
-  'images/senal_r_5_1.jpg',
-  'images/senal_r_5_2.jpg',
-  'images/senal_r_5_4.jpg',
-  'images/senal_r_9.jpg'
+  `${BASE_PATH}/images/question_100.jpg`,
+  `${BASE_PATH}/images/question_140.jpg`,
+  `${BASE_PATH}/images/question_141.jpg`,
+  `${BASE_PATH}/images/question_187.png`,
+  `${BASE_PATH}/images/question_197-300x102.jpg`,
+  `${BASE_PATH}/images/question_199.jpg`,
+  `${BASE_PATH}/images/question_200.jpg`,
+  `${BASE_PATH}/images/question_36.png`,
+  `${BASE_PATH}/images/question_94-235x300.png`,
+  `${BASE_PATH}/images/senal_deslizante.jpg`,
+  `${BASE_PATH}/images/senal_i_14.jpg`,
+  `${BASE_PATH}/images/senal_i_18.jpg`,
+  `${BASE_PATH}/images/senal_i_19.jpg`,
+  `${BASE_PATH}/images/senal_i_20.jpg`,
+  `${BASE_PATH}/images/senal_i_31.jpg`,
+  `${BASE_PATH}/images/senal_i_9.jpg`,
+  `${BASE_PATH}/images/senal_p_15.jpg`,
+  `${BASE_PATH}/images/senal_p_17a.jpg`,
+  `${BASE_PATH}/images/senal_p_22c.jpg`,
+  `${BASE_PATH}/images/senal_p_2a.jpg`,
+  `${BASE_PATH}/images/senal_p_31a.jpg`,
+  `${BASE_PATH}/images/senal_p_33a.jpg`,
+  `${BASE_PATH}/images/senal_p_34.jpg`,
+  `${BASE_PATH}/images/senal_p_3a.jpg`,
+  `${BASE_PATH}/images/senal_p_41.jpg`,
+  `${BASE_PATH}/images/senal_p_45.jpg`,
+  `${BASE_PATH}/images/senal_p_46.jpg`,
+  `${BASE_PATH}/images/senal_p_46_a.jpg`,
+  `${BASE_PATH}/images/senal_p_46b.jpg`,
+  `${BASE_PATH}/images/senal_p_48.jpg`,
+  `${BASE_PATH}/images/senal_p_48a.jpg`,
+  `${BASE_PATH}/images/senal_p_48b.jpg`,
+  `${BASE_PATH}/images/senal_p_49.jpg`,
+  `${BASE_PATH}/images/senal_p_49a.jpg`,
+  `${BASE_PATH}/images/senal_p_49b.jpg`,
+  `${BASE_PATH}/images/senal_p_50.jpg`,
+  `${BASE_PATH}/images/senal_p_51.jpg`,
+  `${BASE_PATH}/images/senal_p_52.jpg`,
+  `${BASE_PATH}/images/senal_p_53.jpg`,
+  `${BASE_PATH}/images/senal_p_55.jpg`,
+  `${BASE_PATH}/images/senal_p_58.jpg`,
+  `${BASE_PATH}/images/senal_p_59.jpg`,
+  `${BASE_PATH}/images/senal_p_5_1a.jpg`,
+  `${BASE_PATH}/images/senal_p_60.jpg`,
+  `${BASE_PATH}/images/senal_p_61.jpg`,
+  `${BASE_PATH}/images/senal_p_66.jpg`,
+  `${BASE_PATH}/images/senal_p_66a.jpg`,
+  `${BASE_PATH}/images/senal_r_11a.jpg`,
+  `${BASE_PATH}/images/senal_r_14.jpg`,
+  `${BASE_PATH}/images/senal_r_16a.jpg`,
+  `${BASE_PATH}/images/senal_r_17.jpg`,
+  `${BASE_PATH}/images/senal_r_20.jpg`,
+  `${BASE_PATH}/images/senal_r_29.jpg`,
+  `${BASE_PATH}/images/senal_r_3-1.jpg`,
+  `${BASE_PATH}/images/senal_r_30c.jpg`,
+  `${BASE_PATH}/images/senal_r_30f.jpg`,
+  `${BASE_PATH}/images/senal_r_4.jpg`,
+  `${BASE_PATH}/images/senal_r_40.jpg`,
+  `${BASE_PATH}/images/senal_r_48.jpg`,
+  `${BASE_PATH}/images/senal_r_49.jpg`,
+  `${BASE_PATH}/images/senal_r_50.jpg`,
+  `${BASE_PATH}/images/senal_r_53.jpg`,
+  `${BASE_PATH}/images/senal_r_5_1.jpg`,
+  `${BASE_PATH}/images/senal_r_5_2.jpg`,
+  `${BASE_PATH}/images/senal_r_5_4.jpg`,
+  `${BASE_PATH}/images/senal_r_9.jpg`
 ];
 
 // Install event - cache resources
 self.addEventListener('install', event => {
+  console.log('Service Worker installing...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('Opened cache');
+        console.log('Opened cache:', CACHE_NAME);
         return cache.addAll(urlsToCache);
       })
       .catch(err => {
         console.log('Cache install failed:', err);
       })
   );
+  // Force the waiting service worker to become the active service worker
   self.skipWaiting();
 });
 
@@ -122,26 +125,38 @@ self.addEventListener('fetch', event => {
       })
       .catch(() => {
         // If both cache and network fail, could return a custom offline page
-        return caches.match('/index.html');
+        return caches.match(`${BASE_PATH}/index.html`);
       })
   );
 });
 
 // Activate event - clean up old caches
 self.addEventListener('activate', event => {
+  console.log('Service Worker activating...');
   const cacheWhitelist = [CACHE_NAME];
   
   event.waitUntil(
     caches.keys().then(cacheNames => {
+      console.log('Clearing old caches...');
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
+            console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
       );
+    }).then(() => {
+      console.log('Service Worker activated:', CACHE_NAME);
+      // Take control of all pages immediately
+      return self.clients.claim();
     })
   );
-  
-  return self.clients.claim();
+});
+
+// Send message to all clients when activated
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });

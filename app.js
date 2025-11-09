@@ -612,12 +612,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Register Service Worker for PWA
     if ('serviceWorker' in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register('/service-worker.js');
+            const registration = await navigator.serviceWorker.register('/test-drive-peru-A1/service-worker.js', {
+                scope: '/test-drive-peru-A1/'
+            });
             console.log('Service Worker registered successfully:', registration.scope);
+            
+            // Check for updates every time the app loads
+            registration.update();
+            
+            // Listen for updates
+            registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                console.log('New service worker found!');
+                
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'activated') {
+                        console.log('New service worker activated!');
+                        // Reload the page to use the new service worker
+                        window.location.reload();
+                    }
+                });
+            });
         } catch (error) {
             console.log('Service Worker registration failed:', error);
         }
     }
+
+    // Handle service worker controller change (when new SW takes over)
+    navigator.serviceWorker?.addEventListener('controllerchange', () => {
+        console.log('Service Worker controller changed, reloading...');
+        window.location.reload();
+    });
 
     // PWA Install prompt
     window.addEventListener('beforeinstallprompt', (e) => {
