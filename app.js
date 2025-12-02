@@ -213,6 +213,9 @@ function showScreen(screenId, addToHistory = true) {
     // Show/hide install button based on current screen
     const installBtn = document.getElementById('install-btn');
     if (screenId === 'home-screen') {
+        // Check for resume capability whenever showing home screen
+        checkResumeAvailable();
+
         // Only show if PWA is installable and button exists
         if (installBtn && deferredPrompt) {
             installBtn.classList.remove('hidden');
