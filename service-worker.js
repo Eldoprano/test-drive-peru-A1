@@ -1,4 +1,4 @@
-const CACHE_NAME = 'peru-driving-test-v4';
+const CACHE_NAME = 'peru-driving-test-v5';
 const BASE_PATH = '/test-drive-peru-A1';
 const urlsToCache = [
   `${BASE_PATH}/`,
