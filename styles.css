@@ -308,6 +308,31 @@ body {
     font-weight: 500;
 }
 
+#question-counter.interactive {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+#question-counter.interactive:hover {
+    color: var(--blue);
+}
+
+#jump-input {
+    width: 60px;
+    padding: 2px 4px;
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: inherit;
+    color: var(--foreground);
+    background: var(--bg-0);
+}
+
 .timer {
     color: var(--blue);
     font-variant-numeric: tabular-nums;
