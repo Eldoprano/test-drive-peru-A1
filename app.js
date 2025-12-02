@@ -44,6 +44,7 @@ async function loadQuizData() {
         }));
 
         loadUserProgress();
+        checkResumeAvailable();
         console.log(`Loaded ${quizData.length} questions`);
     } catch (error) {
         console.error('Error loading quiz data:', error);
@@ -212,6 +213,9 @@ function showScreen(screenId, addToHistory = true) {
     // Show/hide install button based on current screen
     const installBtn = document.getElementById('install-btn');
     if (screenId === 'home-screen') {
+        // Check for resume capability whenever showing home screen
+        checkResumeAvailable();
+
         // Only show if PWA is installable and button exists
         if (installBtn && deferredPrompt) {
             installBtn.classList.remove('hidden');
@@ -229,10 +233,16 @@ function showScreen(screenId, addToHistory = true) {
     }
 }
 
-function startQuiz(mode) {
+function startQuiz(mode, resume = false) {
     currentMode = mode;
-    currentQuestionIndex = 0;
     questionsAnsweredCount = 0; // Reset counter when starting quiz
+
+    if (resume && mode === 'sequential') {
+        const savedIndex = localStorage.getItem('lastSequentialIndex');
+        currentQuestionIndex = savedIndex ? parseInt(savedIndex) : 0;
+    } else {
+        currentQuestionIndex = 0;
+    }
 
     if (mode === 'test') {
         createTestSequence();
@@ -259,6 +269,7 @@ function loadNextQuestion() {
         question = selectRandomQuestion();
     } else if (currentMode === 'sequential') {
         question = selectSequentialQuestion();
+        localStorage.setItem('lastSequentialIndex', currentQuestionIndex);
         currentQuestionIndex++;
     } else if (currentMode === 'test') {
         if (currentQuestionIndex >= questionSequence.length) {
@@ -414,12 +425,16 @@ function updateQuizHeader() {
 
     if (currentMode === 'test') {
         counter.textContent = `Question ${currentQuestionIndex}/${questionSequence.length}`;
+        counter.classList.remove('interactive');
     } else if (currentMode === 'sequential') {
         counter.textContent = `Question ${currentQuestion.questionNumber}/${quizData.length} • Answered: ${questionsAnsweredCount}`;
+        counter.classList.add('interactive');
     } else if (currentMode === 'random') {
         counter.textContent = `Question ${currentQuestion.questionNumber} • Answered: ${questionsAnsweredCount}`;
+        counter.classList.remove('interactive');
     } else {
         counter.textContent = `Question ${currentQuestion.questionNumber}`;
+        counter.classList.remove('interactive');
     }
 }
 
@@ -682,7 +697,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelectorAll('.menu-btn[data-mode]').forEach(btn => {
         btn.addEventListener('click', () => {
             const mode = btn.dataset.mode;
-            startQuiz(mode);
+            if (mode === 'resume') {
+                startQuiz('sequential', true);
+            } else {
+                startQuiz(mode);
+            }
         });
     });
 
@@ -711,6 +730,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Hide timer by default
     document.getElementById('timer').style.display = 'none';
+
+    // Jump to question handler
+    document.getElementById('question-counter').addEventListener('click', () => {
+        if (currentMode === 'sequential') {
+            // Prevent if already an input
+            if (document.getElementById('jump-input')) return;
+            enableJumpToQuestion();
+        }
+    });
 });
 
 // Handle browser back/forward buttons
@@ -729,3 +757,57 @@ window.addEventListener('popstate', (event) => {
         showScreen('home-screen', false);
     }
 });
+
+function checkResumeAvailable() {
+    const savedIndex = localStorage.getItem('lastSequentialIndex');
+    const resumeBtn = document.getElementById('resume-btn');
+    if (savedIndex && parseInt(savedIndex) > 0 && resumeBtn) {
+        resumeBtn.classList.remove('hidden');
+    }
+}
+
+function enableJumpToQuestion() {
+    const counter = document.getElementById('question-counter');
+    const currentNum = currentQuestion.questionNumber;
+
+    counter.innerHTML = `Question <input type="number" id="jump-input" value="${currentNum}" min="1" max="${quizData.length}"> / ${quizData.length}`;
+
+    const input = document.getElementById('jump-input');
+    input.focus();
+    input.select();
+
+    // Stop propagation of click to avoid immediately triggering outside clicks if any
+    input.addEventListener('click', (e) => e.stopPropagation());
+
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const val = parseInt(input.value);
+            if (val >= 1 && val <= quizData.length) {
+                jumpToQuestion(val);
+            } else {
+                updateQuizHeader(); // Revert
+            }
+        } else if (e.key === 'Escape') {
+            updateQuizHeader(); // Revert
+        }
+    });
+
+    input.addEventListener('blur', () => {
+        // Small delay to allow enter key or other events to process
+        setTimeout(() => {
+             // Only revert if we haven't just navigated (which would have refreshed the header already)
+             if (document.getElementById('jump-input')) {
+                 updateQuizHeader();
+             }
+        }, 100);
+    });
+}
+
+function jumpToQuestion(number) {
+    const index = number - 1;
+
+    if (index >= 0 && index < quizData.length) {
+        currentQuestionIndex = index;
+        loadNextQuestion();
+    }
+}
