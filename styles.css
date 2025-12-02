@@ -390,6 +390,7 @@ body {
 
 .question-image img {
     margin: auto;
+    max-width: 100%;
     height: auto;
     display: block;
 }
