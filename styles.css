@@ -433,6 +433,10 @@ body {
     color: var(--foreground);
     line-height: 1.5;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .choice-btn:hover:not(:disabled) {
