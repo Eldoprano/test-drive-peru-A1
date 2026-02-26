@@ -79,15 +79,13 @@ const urlsToCache = [
 
 // Install event - cache resources
 self.addEventListener('install', event => {
-  console.log('Service Worker installing...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('Opened cache:', CACHE_NAME);
         return cache.addAll(urlsToCache);
       })
       .catch(err => {
-        console.log('Cache install failed:', err);
+        // Silently fail if cache installation fails
       })
   );
   // Force the waiting service worker to become the active service worker
@@ -132,22 +130,18 @@ self.addEventListener('fetch', event => {
 
 // Activate event - clean up old caches
 self.addEventListener('activate', event => {
-  console.log('Service Worker activating...');
   const cacheWhitelist = [CACHE_NAME];
   
   event.waitUntil(
     caches.keys().then(cacheNames => {
-      console.log('Clearing old caches...');
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
-            console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
       );
     }).then(() => {
-      console.log('Service Worker activated:', CACHE_NAME);
       // Take control of all pages immediately
       return self.clients.claim();
     })
