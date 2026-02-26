@@ -77,10 +77,7 @@
     <div id="quiz-screen" class="screen">
         <div class="quiz-header">
             <button id="exit-quiz" class="icon-btn" aria-label="Exit quiz">
-                <span>←</span>
-            </button>
-            <button id="prev-btn" class="icon-btn hidden" aria-label="Previous question">
-                <span>↩️</span>
+                <span>🏠</span>
             </button>
             <div class="quiz-info">
                 <span id="question-counter">Question 1/40</span>
@@ -96,9 +93,14 @@
 
             <div id="choices-container" class="choices-container"></div>
 
-            <button id="skip-btn" class="skip-btn">
-                <span>⏭️ Skip Question</span>
-            </button>
+            <div class="quiz-controls">
+                <button id="prev-btn" class="nav-btn back-btn hidden" aria-label="Previous question">
+                    <span>⬅️</span>
+                </button>
+                <button id="skip-btn" class="skip-btn">
+                    <span>Skip ➡️</span>
+                </button>
+            </div>
 
             <div id="feedback" class="feedback hidden">
                 <p id="feedback-text"></p>
