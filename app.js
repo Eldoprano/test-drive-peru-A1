@@ -316,7 +316,6 @@ function displayQuestion(question) {
         const button = document.createElement('button');
         button.className = 'choice-btn';
         button.textContent = choice.text;
-        button.onclick = () => selectAnswer(choice, button);
         choicesContainer.appendChild(button);
     });
 
@@ -737,6 +736,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Prevent if already an input
             if (document.getElementById('jump-input')) return;
             enableJumpToQuestion();
+        }
+    });
+
+    // Choice selection via event delegation
+    const choicesContainer = document.getElementById('choices-container');
+    choicesContainer.addEventListener('click', (event) => {
+        const button = event.target.closest('.choice-btn');
+        if (button && !button.disabled) {
+            const index = Array.from(choicesContainer.children).indexOf(button);
+            const choice = currentQuestion.choices[index];
+            if (choice) {
+                selectAnswer(choice, button);
+            }
         }
     });
 });
