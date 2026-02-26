@@ -1,6 +1,10 @@
 # Peru Driving Test - Practice App
 
-A vibe-coded Progressive Web App (PWA) for practicing Peru driver's license A-1 test questions.
+A vibe-coded Progressive Web App for practicing Peru driver's license A-1 test questions.
+
+<a href="https://eldoprano.github.io/test-drive-peru-A1/">
+        <img src="https://github.com/Eldoprano/Eldoprano/raw/main/assets/screenshots/peru-driving.png" alt="Peru Driving Test" width="60%" />
+      </a>
 
 ## Features
 
