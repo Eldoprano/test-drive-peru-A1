@@ -419,10 +419,20 @@ function displayQuestion(question, restoredState = null) {
     const choicesContainer = document.getElementById('choices-container');
     choicesContainer.innerHTML = '';
 
-    question.choices.forEach((choice, index) => {
+    // Create a shuffled copy of choices
+    const shuffledChoices = [...question.choices];
+    for (let i = shuffledChoices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledChoices[i], shuffledChoices[j]] = [shuffledChoices[j], shuffledChoices[i]];
+    }
+
+    shuffledChoices.forEach((choice) => {
         const button = document.createElement('button');
         button.className = 'choice-btn';
         button.textContent = choice.text;
+        if (choice.is_correct) {
+            button.dataset.correct = 'true';
+        }
         button.onclick = () => selectAnswer(choice, button);
 
         // Restore selection/state if provided
@@ -512,8 +522,8 @@ function selectAnswer(selectedChoice, selectedButton) {
         selectedButton.classList.add('incorrect');
 
         // Highlight correct answer
-        allButtons.forEach((btn, index) => {
-            if (currentQuestion.choices[index].is_correct) {
+        allButtons.forEach((btn) => {
+            if (btn.dataset.correct === 'true') {
                 btn.classList.add('correct');
             }
         });
