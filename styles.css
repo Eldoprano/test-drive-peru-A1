@@ -286,18 +286,29 @@ body {
 }
 
 .icon-btn {
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
+    background: var(--bg-1);
+    border: 2px solid var(--bg-3);
+    border-radius: 8px;
+    font-size: 1.25rem;
     color: var(--foreground);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 40px;
+}
+
+.icon-btn span {
+    line-height: 1;
 }
 
 .icon-btn:hover {
-    color: var(--green);
-    transform: scale(1.1);
+    background: var(--bg-2);
+    border-color: var(--green);
+    transform: translateY(-2px);
 }
 
 .quiz-info {
@@ -520,18 +531,22 @@ body {
 
 /* Skip Button */
 .skip-btn {
-    display: block;
-    width: 100%;
-    margin-top: 1.5rem;
-    background: transparent;
-    color: var(--gray-1);
-    border: 2px dashed var(--bg-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: auto;
+    margin-top: 0;
+    background: var(--bg-1);
+    color: var(--foreground);
+    border: 2px solid var(--bg-3);
     border-radius: 8px;
     padding: 0.75rem 1.5rem;
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    height: 48px;
 }
 
 .skip-btn:hover {
@@ -545,6 +560,40 @@ body {
 }
 
 .skip-btn.hidden {
+    display: none;
+}
+
+/* Quiz Controls */
+.quiz-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.back-btn {
+    background: var(--bg-1);
+    border: 2px solid var(--bg-3);
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    color: var(--foreground);
+}
+
+.back-btn:hover {
+    background: var(--bg-2);
+    border-color: var(--blue);
+    transform: translateX(-2px);
+}
+
+.back-btn.hidden {
     display: none;
 }
 
@@ -834,6 +883,46 @@ body {
 
     .modal-header h3 {
         font-size: 1.25rem;
+    }
+
+    /* Compact Quiz View */
+    .quiz-container {
+        padding: 1rem;
+    }
+
+    .question-section {
+        margin-bottom: 1rem;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .question-image {
+        margin-bottom: 1rem;
+    }
+
+    .question-image img {
+        max-height: 180px;
+        object-fit: contain;
+    }
+
+    .choice-btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .choices-container {
+        gap: 0.5rem;
+    }
+
+    .quiz-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .quiz-controls {
+        margin-top: 1rem;
     }
 }
 
