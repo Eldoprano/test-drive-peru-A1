@@ -668,6 +668,12 @@ body {
     color: var(--bg-0);
 }
 
+/* Legend Colors */
+.bg-not-seen { background: var(--gray-0); }
+.bg-struggling { background: var(--red); }
+.bg-learning { background: var(--yellow); }
+.bg-mastered { background: var(--green); }
+
 /* Question Detail Modal */
 .modal-overlay {
     position: fixed;
