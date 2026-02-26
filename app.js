@@ -439,7 +439,8 @@ function displayQuestion(question, restoredState = null) {
         button.onclick = () => selectAnswer(choice, button);
 
         // Restore selection/state if provided
-        if (restoredState && restoredState.selectedChoiceIndex === index) {
+        const originalIndex = question.choices.indexOf(choice);
+        if (restoredState && restoredState.selectedChoiceIndex === originalIndex) {
             button.classList.add('selected');
             if (restoredState.result === 'correct') {
                 button.classList.add('correct');

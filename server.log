@@ -1,6 +1,0 @@
-127.0.0.1 - - [26/Feb/2026 03:09:53] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [26/Feb/2026 03:09:53] "GET /styles.css HTTP/1.1" 200 -
-127.0.0.1 - - [26/Feb/2026 03:09:53] "GET /app.js HTTP/1.1" 200 -
-127.0.0.1 - - [26/Feb/2026 03:09:53] "GET /quiz_data.json HTTP/1.1" 200 -
-127.0.0.1 - - [26/Feb/2026 03:09:53] code 404, message File not found
-127.0.0.1 - - [26/Feb/2026 03:09:53] "GET /test-drive-peru-A1/service-worker.js HTTP/1.1" 404 -
