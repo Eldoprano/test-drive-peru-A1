@@ -10,6 +10,8 @@ let testTimerInterval = null;
 let questionSequence = [];
 let deferredPrompt = null; // For PWA install prompt
 let questionsAnsweredCount = 0; // Counter for random and sequential modes
+let recentQuestions = []; // Buffer to prevent immediate repetition
+const RECENT_WINDOW_SIZE = 15;
 
 // Theme Management
 function initTheme() {
@@ -70,10 +72,20 @@ function loadUserProgress() {
         });
         saveUserProgress();
     }
+
+    const savedRecent = localStorage.getItem('recentQuestions');
+    if (savedRecent) {
+        try {
+            recentQuestions = JSON.parse(savedRecent);
+        } catch (e) {
+            recentQuestions = [];
+        }
+    }
 }
 
 function saveUserProgress() {
     localStorage.setItem('userProgress', JSON.stringify(userProgress));
+    localStorage.setItem('recentQuestions', JSON.stringify(recentQuestions));
 }
 
 function updateQuestionProgress(questionNumber, isCorrect, timeTaken) {
@@ -91,6 +103,12 @@ function updateQuestionProgress(questionNumber, isCorrect, timeTaken) {
 
     progress.attempts++;
     progress.totalTime += Math.min(timeTaken, 20000); // Cap at 20 seconds
+
+    // Add to recent questions buffer
+    recentQuestions.push(questionNumber);
+    if (recentQuestions.length > RECENT_WINDOW_SIZE) {
+        recentQuestions.shift();
+    }
 
     saveUserProgress();
 }
@@ -125,8 +143,8 @@ function getQuestionMasteryLevel(questionNumber) {
 function getQuestionWeight(questionNumber) {
     const progress = userProgress[questionNumber];
 
-    // Never seen: highest priority (weight 100)
-    if (!progress.seen) return 100;
+    // Never seen: highest priority (weight 250)
+    if (!progress.seen) return 250;
 
     const total = progress.correct + progress.incorrect;
     const accuracy = progress.correct / total;
@@ -142,34 +160,52 @@ function getQuestionWeight(questionNumber) {
     }
 
     // MASTERED: Low priority - they know it well
-    // Weight 1-15, decreases with more successful attempts
+    // Weight 1-5, decreases with more successful attempts
     if (accuracy >= 0.85 && total >= 3 && avgTime <= 12000) {
-        return Math.max(1, 15 - total);
+        return Math.max(1, 5 - total);
     }
     if (accuracy === 1.0 && total >= 2) {
-        return Math.max(1, 12 - total);
+        return Math.max(1, 5 - total);
     }
 
     // LEARNING: Medium priority - still improving
-    // Weight 20-50 based on accuracy (prioritizes lower accuracy)
-    return 20 + (1 - accuracy) * 30;
+    // Weight 20-40 based on accuracy (prioritizes lower accuracy)
+    return 20 + (1 - accuracy) * 20;
 }
 
 // Question Selection
 function selectRandomQuestion() {
-    // Build weighted array (exclude current question)
-    const weights = [];
-    const questions = [];
+    // Build weighted array (exclude current question and recent questions)
+    let weights = [];
+    let questions = [];
 
-    quizData.forEach(q => {
-        if (currentQuestion && q.questionNumber === currentQuestion.questionNumber) {
-            return; // Skip current question
-        }
+    // Helper to build candidate list
+    const buildCandidates = (excludeRecent) => {
+        weights = [];
+        questions = [];
 
-        const weight = getQuestionWeight(q.questionNumber);
-        weights.push(weight);
-        questions.push(q);
-    });
+        quizData.forEach(q => {
+            if (currentQuestion && q.questionNumber === currentQuestion.questionNumber) {
+                return; // Skip current question
+            }
+
+            if (excludeRecent && recentQuestions.includes(q.questionNumber)) {
+                return; // Skip recent questions
+            }
+
+            const weight = getQuestionWeight(q.questionNumber);
+            weights.push(weight);
+            questions.push(q);
+        });
+    };
+
+    // First try excluding recent questions
+    buildCandidates(true);
+
+    // Fallback: If no questions available (e.g., all are recent), try including recent ones
+    if (questions.length === 0) {
+        buildCandidates(false);
+    }
 
     // Weighted random selection
     const totalWeight = weights.reduce((sum, w) => sum + w, 0);
