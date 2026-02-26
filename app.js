@@ -429,10 +429,17 @@ function displayQuestion(question, restoredState = null) {
         [shuffledChoices[i], shuffledChoices[j]] = [shuffledChoices[j], shuffledChoices[i]];
     }
 
-    shuffledChoices.forEach((choice) => {
+    shuffledChoices.forEach((choice, index) => {
         const button = document.createElement('button');
         button.className = 'choice-btn';
-        button.textContent = choice.text;
+
+        // Strip existing prefix if present
+        let text = choice.text.replace(/^[a-z]\)\s+/i, '');
+
+        // Determine new prefix based on current index
+        const prefix = String.fromCharCode(97 + index) + ') ';
+
+        button.textContent = prefix + text;
         if (choice.is_correct) {
             button.dataset.correct = 'true';
         }
