@@ -11,6 +11,12 @@ let questionSequence = [];
 let deferredPrompt = null; // For PWA install prompt
 let questionsAnsweredCount = 0; // Counter for random and sequential modes
 
+// History Management
+let questionHistory = [];
+let historyIndex = 0;
+let liveQuestionState = null;
+let currentQuestionState = null;
+
 // Theme Management
 function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -237,6 +243,12 @@ function startQuiz(mode, resume = false) {
     currentMode = mode;
     questionsAnsweredCount = 0; // Reset counter when starting quiz
 
+    // Reset history
+    questionHistory = [];
+    historyIndex = 0;
+    liveQuestionState = null;
+    currentQuestionState = null;
+
     if (resume && mode === 'sequential') {
         const savedIndex = localStorage.getItem('lastSequentialIndex');
         currentQuestionIndex = savedIndex ? parseInt(savedIndex) : 0;
@@ -263,6 +275,42 @@ function exitQuiz() {
 
 // Quiz Logic
 function loadNextQuestion() {
+    // Handle history navigation
+    if (historyIndex < questionHistory.length) {
+        historyIndex++;
+
+        // If back to live state
+        if (historyIndex === questionHistory.length) {
+            if (liveQuestionState) {
+                currentQuestion = liveQuestionState.question;
+                questionStartTime = Date.now();
+                displayQuestion(currentQuestion, liveQuestionState.state);
+                liveQuestionState = null;
+                updateQuizHeader();
+                return;
+            }
+        } else {
+            // Load history item
+            const historyItem = questionHistory[historyIndex];
+            currentQuestion = historyItem.question;
+            displayQuestion(currentQuestion, historyItem.state);
+            updateQuizHeader();
+            return;
+        }
+    }
+
+    // Push current completed question to history
+    if (currentQuestion && currentQuestionState) {
+        questionHistory.push({
+            question: currentQuestion,
+            state: currentQuestionState
+        });
+        historyIndex++;
+    }
+
+    // Reset state for new question
+    currentQuestionState = null;
+
     let question;
 
     if (currentMode === 'random') {
@@ -287,7 +335,30 @@ function loadNextQuestion() {
     updateQuizHeader();
 }
 
-function displayQuestion(question) {
+function goToPreviousQuestion() {
+    if (historyIndex > 0) {
+        // If we are at the end (live), save current state
+        if (historyIndex === questionHistory.length) {
+            liveQuestionState = {
+                question: currentQuestion,
+                state: currentQuestionState
+            };
+        }
+
+        historyIndex--;
+        const historyItem = questionHistory[historyIndex];
+        currentQuestion = historyItem.question;
+
+        // Restore state
+        // If result was incorrect/skipped, pass null to reset UI so user can try again
+        const stateToRestore = (historyItem.state.result === 'correct') ? historyItem.state : null;
+
+        displayQuestion(currentQuestion, stateToRestore);
+        updateQuizHeader();
+    }
+}
+
+function displayQuestion(question, restoredState = null) {
     // Question text - hide if empty
     const questionText = document.getElementById('question-text');
     if (question.question && question.question.trim()) {
@@ -316,22 +387,61 @@ function displayQuestion(question) {
         const button = document.createElement('button');
         button.className = 'choice-btn';
         button.textContent = choice.text;
+
+        // Restore selection/state if provided
+        if (restoredState && restoredState.selectedChoiceIndex === index) {
+            button.classList.add('selected');
+            if (restoredState.result === 'correct') {
+                button.classList.add('correct');
+            } else if (restoredState.result === 'incorrect') {
+                button.classList.add('incorrect');
+            }
+        }
+
+        if (restoredState && restoredState.result === 'correct') {
+            button.disabled = true;
+            if (choice.is_correct) {
+                button.classList.add('correct');
+            }
+        }
+
         choicesContainer.appendChild(button);
     });
 
-    // Reset feedback
+    // Handle feedback and buttons based on restored state
     const feedback = document.getElementById('feedback');
-    feedback.classList.add('hidden');
-    feedback.classList.remove('correct', 'incorrect');
-
-    // Show skip button
     const skipBtn = document.getElementById('skip-btn');
-    skipBtn.classList.remove('hidden');
+
+    if (restoredState && restoredState.result === 'correct') {
+        feedback.classList.remove('hidden');
+        feedback.classList.add('correct');
+        feedback.classList.remove('incorrect');
+        document.getElementById('feedback-text').textContent = '✓ Correct!';
+        document.getElementById('next-btn').classList.remove('hidden'); // Show next button to allow moving forward
+        skipBtn.classList.add('hidden');
+    } else {
+        // Reset feedback for fresh or incorrect state (allowing retry)
+        feedback.classList.add('hidden');
+        feedback.classList.remove('correct', 'incorrect');
+        skipBtn.classList.remove('hidden');
+    }
 }
 
 function selectAnswer(selectedChoice, selectedButton) {
     const timeTaken = Date.now() - questionStartTime;
     const isCorrect = selectedChoice.is_correct;
+
+    // Track state
+    const choiceIndex = currentQuestion.choices.indexOf(selectedChoice);
+    currentQuestionState = {
+        result: isCorrect ? 'correct' : 'incorrect',
+        selectedChoiceIndex: choiceIndex
+    };
+
+    // Update history if we are revisiting a question
+    if (historyIndex < questionHistory.length) {
+        questionHistory[historyIndex].state = currentQuestionState;
+    }
 
     // Disable all choice buttons
     const allButtons = document.querySelectorAll('.choice-btn');
@@ -382,6 +492,17 @@ function selectAnswer(selectedChoice, selectedButton) {
 }
 
 function skipQuestion() {
+    // Track state
+    currentQuestionState = {
+        result: 'skipped',
+        selectedChoiceIndex: null
+    };
+
+    // Update history if we are revisiting a question
+    if (historyIndex < questionHistory.length) {
+        questionHistory[historyIndex].state = currentQuestionState;
+    }
+
     // Hide skip button
     const skipBtn = document.getElementById('skip-btn');
     skipBtn.classList.add('hidden');
@@ -421,6 +542,14 @@ function showFeedback(isCorrect) {
 
 function updateQuizHeader() {
     const counter = document.getElementById('question-counter');
+
+    // Update Previous button visibility
+    const prevBtn = document.getElementById('prev-btn');
+    if (historyIndex > 0) {
+        prevBtn.classList.remove('hidden');
+    } else {
+        prevBtn.classList.add('hidden');
+    }
 
     if (currentMode === 'test') {
         counter.textContent = `Question ${currentQuestionIndex}/${questionSequence.length}`;
@@ -712,6 +841,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('exit-stats').addEventListener('click', () => {
         showScreen('home-screen');
     });
+
+    // Previous button
+    document.getElementById('prev-btn').addEventListener('click', goToPreviousQuestion);
 
     // Next button
     document.getElementById('next-btn').addEventListener('click', loadNextQuestion);
