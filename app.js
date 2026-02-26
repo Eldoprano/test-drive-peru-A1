@@ -371,11 +371,14 @@ function displayQuestion(question, restoredState = null) {
 
     // Question image
     const questionImage = document.getElementById('question-image');
+    questionImage.innerHTML = '';
     if (question.images && question.images.length > 0) {
-        questionImage.innerHTML = `<img src="${question.images[0]}" alt="Question image">`;
+        const img = document.createElement('img');
+        img.src = question.images[0];
+        img.alt = 'Question image';
+        questionImage.appendChild(img);
         questionImage.style.display = 'block';
     } else {
-        questionImage.innerHTML = '';
         questionImage.style.display = 'none';
     }
 
@@ -661,11 +664,14 @@ function showQuestionModal(question) {
 
     // Image
     const modalImage = document.getElementById('modal-image');
+    modalImage.innerHTML = '';
     if (question.images && question.images.length > 0) {
-        modalImage.innerHTML = `<img src="${question.images[0]}" alt="Question image">`;
+        const img = document.createElement('img');
+        img.src = question.images[0];
+        img.alt = 'Question image';
+        modalImage.appendChild(img);
         modalImage.style.display = 'block';
     } else {
-        modalImage.innerHTML = '';
         modalImage.style.display = 'none';
     }
 
@@ -681,12 +687,14 @@ function showQuestionModal(question) {
 
     // Choices
     const modalChoices = document.getElementById('modal-choices');
-    let choicesHtml = '';
+    modalChoices.innerHTML = '';
     question.choices.forEach(choice => {
         const className = choice.is_correct ? 'modal-choice correct' : 'modal-choice';
-        choicesHtml += `<div class="${className}">${choice.text}</div>`;
+        const div = document.createElement('div');
+        div.className = className;
+        div.textContent = choice.text;
+        modalChoices.appendChild(div);
     });
-    modalChoices.innerHTML = choicesHtml;
 
     // Stats
     const modalStats = document.getElementById('modal-stats');
